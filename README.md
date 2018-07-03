@@ -1,4 +1,4 @@
-# Serverless-ETL-and-data-analysis-on-AWS
+# Serverless ETL and data analysis on AWS
 ![kaggle_data.png](/images/kaggle_data.png)<br>
 **This lab using Trending YouTube Video Statistics dataset on Kaggle**
 

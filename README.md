@@ -49,7 +49,7 @@ AWS Glue is a fully managed data catalog and ETL (extract, transform, and load) 
 ## Lab tutorial
 
 
-#### Create following IAM roles
+### Create following IAM roles
 
 * 	On the **service** menu, click **IAM**.<br>
 * 	In the navigation pane, choose **Roles**.<br>
@@ -148,7 +148,7 @@ You successfully create the role for Redshift clusters to call S3, Athena and Gl
 
 
 
-#### Create S3 bucket to store data
+### Create S3 bucket to store data
 
 The first bucket stores the data that contain YouTube trending data<br><br>
 The second bucket stores the data that after **doing csv ETL process**<br><br>The 
@@ -180,7 +180,7 @@ The fifth bucket stores the data that **complete topic detection job**<br><br>
 
 
 
-#### Setup data catalog in AWS Glue
+### Setup data catalog in AWS Glue
 
 Create database, tables, crawlers, jobs in Glue<br><br>
 * 	On the **Services** menu, click **AWS Glue**.<br><br>
@@ -279,19 +279,51 @@ Next step you will learn how to trigger ETL job with Lambda function automatical
 
 
 
-#### Create a Lambda function in order to automate ETL job with glue
+### Create a Lambda function in order to automate ETL job with glue
+
+* 	On the **Services** menu, click **Lambda**.<br><br>
+* 	Click **Create function**.<br><br>
+* 	Choose **Author from scratch**.<br><br>
+* 	Enter function Name **ETL-auto**.<br><br>
+* 	Select **python 3.6** in **Runtime** blank.<br><br>
+* 	Select **Choose an existing role** in Role blank and choose **LambdaAutoETL** as **Existing role**.<br><br>
+![lambda_glue1.png](/images/lambda_glue1.png)<br>   
+* 	Click **Create function**.<br><br>
+* 	In **configuration**, click **S3** below **Add triggers** to add trigger for **ETL-auto** function<br><br>
+and drop down to **Configure triggers** part, select bucket **“yourname-dataset”** as Bucket, select **PUT** as **Event type**. Remember to check **Enable trigger** box then you click **Add**.<br><br>
+![lambda_glue2.png](/images/lambda_glue2.png)<br>
+![lambda_glue3.png](/images/lambda_glue3.png)<br>  
+* 	Click **ETL-auto** blank in **Designer** and replace original code that existing in **Function code** editor with below code<br><br>
+ 
+         import boto3
+         import json
+
+         glue = boto3.client('glue')
+
+         def lambda_handler(event, context):
+             # TODO implement
+             response = glue.start_job_run(
+                 JobName = 'data-csv-parquet',
+                 Arguments = {})
+             return response
+ 
+![lambda_glue4.png](/images/lambda_glue4.png)<br>   
+* 	Click **Save** to save the change of function.<br><br>
+* 	Now you can upload a csv file into **yourname-dataset** bucket to test that whether this Lambda function operating normally.<br><br>
+* 	After you upload a csv file into **yourname-dataset** bucket, AWS Glue will run the job **“data-csv-parquet”**. The **History** console will show the job is running if your Lambda function is correct.<br><br>
+![lambda_glue5.png](/images/lambda_glue5.png)<br>   
+Congratulations! You now have learned how to setup an automated ETL job with Lambda function.<br>
+
+
+
+### Create a Lambda to trigger topic detection jobs by Comprehend
 
 
 
 
-#### Create a Lambda to trigger topic detection jobs by Comprehend
 
 
-
-
-
-
-#### Data visualization with QuickSight
+### Data visualization with QuickSight
 
 
  
@@ -300,4 +332,4 @@ Next step you will learn how to trigger ETL job with Lambda function automatical
 ## Appendix
 
 
-#### Visualize data with Tableau
+### Visualize data with Tableau

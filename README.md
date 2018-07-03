@@ -279,7 +279,7 @@ Next step you will learn how to trigger ETL job with Lambda function automatical
 
 
 
-### Create a Lambda function in order to automate ETL job with glue
+### Create a Lambda function in order to automate ETL job with glue (automated ETL job)
 
 * 	On the **Services** menu, click **Lambda**.<br><br>
 * 	Click **Create function**.<br><br>
@@ -316,9 +316,184 @@ Congratulations! You now have learned how to setup an automated ETL job with Lam
 
 
 
-### Create a Lambda to trigger topic detection jobs by Comprehend
+
+### Setup your first topic detection jobs by Amazon Comprehend
+
+* 	On the **Services** menu, click **Amazon Comprehend**.<br><br>
+* 	In the navigation pane, click **Topic modeling**.<br><br>
+* 	Click **Create**.<br><br>
+* 	Select **My data (S3)** as input data.<br><br>
+* 	For **S3 data location** of input data, enter the URL of **“yourname-topic-analysis”** bucket **(e.g., s3://james-topic-analysis/)**.<br><br>
+* 	For Input format, select **One document per line**.<br><br>
+* 	Enter **50** for **Numbers of topic**.<br><br>
+* 	For **Job Name**, enter **FirstJob**.<br><br>
+* 	For **S3 data location** of output data, enter the URL of **“yourname-topic-analysis-result” (e.g., s3://james-topic-analysis-result/)**.<br><br>
+* 	Select **Create a new IAM role** in **Select an IAM role** blank.<br><br>
+* 	For **Permission to access** select **any S3 bucket**.<br><br>
+* 	For **Name suffix** enter **“user”**.<br><br>
+![setup_comprehend1.png](/images/setup_comprehend1.png)<br>    
+* 	Click **Create job**.<br><br>
+* 	It will take a few time running<br><br>
+![setup_comprehend2.png](/images/setup_comprehend2.png)<br>  
+* 	Then you will see your job is running.<br><br>
+![setup_comprehend3.png](/images/setup_comprehend3.png)<br>  
+* 	When the job complete the status change to Complete.<br><br>
+* 	After job completed, you will find a new output in  **yourname-topic-analysis-result** bucket<br><br>
+* 	Click below folder<br><br>
+![setup_comprehend4.png](/images/setup_comprehend4.png)<br>  
+You will find that a **output** folder inside <br><br>
+![setup_comprehend5.png](/images/setup_comprehend5.png)<br>  
+Click **output** you will see a file **output.tar.gz**<br><br>
+![setup_comprehend6.png](/images/setup_comprehend6.png)<br>  
+Download the file you will get the topic modeling result as csv file<br><br>
+![setup_comprehend7.png](/images/setup_comprehend7.png)<br>  
+![setup_comprehend8.png](/images/setup_comprehend8.png)<br> 
+ 
 
 
+
+### Create a Lambda to trigger topic detection jobs by Comprehend (automated topic modeling job)
+
+1.1. 	On the Services menu, click Lambda.
+1.2. 	Click Create function.
+1.3. 	Choose Author from scratch.
+1.4. 	Enter function Name comprehend-lambda.
+1.5. 	Select python 3.6 in Runtime blank.
+1.6. 	Select Choose an existing role in Role blank and choose Comprehend-Job as Existing role.
+1.7. 	Click Create function.
+1.8. 	In configuration, click S3 below Add triggers to add trigger for comprehend-lambda function
+1.9. 	and drop down to Configure triggers part, select bucket “yourname-topic-analysis” as Bucket, select PUT as Event type. Remember to check Enable trigger box then you click Add.
+ 
+1.10. 	Click comprehend-lambda blank in Designer and replace original code that existing in Function code editor with below code
+Input_s3_url = “s3://yourname-topic-analysis”
+output_s3_url = "s3://yourname-topic-analysis-result"
+data_access_role_arn = "arn:aws:iam::xxxxxxxxxxxx:role/service-role/AmazonComprehendServiceRoleS3FullAccess-user"
+(The arn of IAM role that you create in Amazon Comprehend console)
+ 
+import boto3
+import json
+
+def lambda_handler(event, context):
+    # TODO implement
+    comprehend = boto3.client(service_name='comprehend', region_name='us-east-1')
+    input_s3_url = "s3://yourname-topic-analysis"
+    input_doc_format = "ONE_DOC_PER_LINE"
+    output_s3_url = "s3://yourname-topic-analysis-result"
+    data_access_role_arn = "arn:aws:iam::xxxxxxxxxxxx:role/service-role/AmazonComprehendServiceRoleS3FullAccess-user"
+    number_of_topics = 50
+ 
+    input_data_config = {"S3Uri": input_s3_url, "InputFormat": input_doc_format}
+    output_data_config = {"S3Uri": output_s3_url}
+ 
+    start_topics_detection_job_result = comprehend.start_topics_detection_job(NumberOfTopics=number_of_topics,
+                                                                              InputDataConfig=input_data_config,
+                                                                              OutputDataConfig=output_data_config,
+                                                                              DataAccessRoleArn=data_access_role_arn)
+    return start_topics_detection_job_result
+ 
+1.11. 	Click Save to save the change of function.
+1.12. 	Now you can upload a csv file into “yourname-topic-analysis” bucket to test that whether this Lambda function operating normally.
+1.13. 	On the Services menu, click S3.
+1.14. 	Click yourname-topic-analysis bucket.
+1.15. 	Click Upload.
+1.16. 	Click Add files.
+1.17. 	Select file word_analysis.csv and click Upload.
+1.18. 	When it upload finish go to your Amazon comprehend console
+1.19. 	Click Topic modeling
+1.20. 	You will find a new job is running
+ 
+1.21. 	Download the output of job in yourname-topic-analysis-result bucket after job completed which is a result from topic modeling
+ 
+     
+Congratulations! You now have learned how to setup an automated topic modeling job with Lambda function.
+
+
+### Analyze the data with Athena & Redshift Spectrum
+
+Athena can query the data in an easy way with data catalog of Glue
+1.1. 	On the Services menu, click Athena.
+1.2. 	On the Query Editor tab, choose the database my-data.
+ 
+1.3. 	Choose the yourname_etl_result table.
+1.4. 	Query the data, type below standard SQL:
+Select * From "my-data"."yourname_etl_result" limit 100;
+(e.g., Select * From "my-data"."james_etl_result" limit 100;)
+1.5. 	Click Run Query and Athena will query data as the below screen
+ 
+1.6. 	Choose the yourname_etl_result2 table.
+1.7. 	Query the data, type below standard SQL:
+Select * From "my-data"."yourname_etl_result2";
+(e.g., Select * From "my-data"."james_etl_result2";)
+Click Run Query and Athena will query data as the below screen
+ 
+ 
+After finish analyzing data in Athena, get start with data analysis with Redshift Spectrum. Different from Athena, Redshift is suitable for long term workflow of data analysis that often processing structural data query job.
+•	First setup VPC in which you want to create your cluster
+•	Launch Redshift cluster and connect to AWS Glue
+1.8. 	On the Services menu, click VPC.
+1.9. 	Click Start VPC Wizard.
+1.10. 	In this workshop we simply choose VPC with a single Public Subnet
+1.11. 	Enter your VPC name “Redshift-VPC”.
+1.12. 	Click Add Endpoint below Service endpoints and select com.amazonaws.us-east-1.s3 as service.
+ 
+1.13. 	Click Create VPC.
+1.14. 	In the navigation pane, choose Security Groups.
+1.15. 	Select the Security Group that attach on “Redshift-VPC” which group name is default then select Inbound Rules.
+1.16. 	Click Edit
+1.17. 	Click Add another rule below, Type for ALL Traffic, Source for 0.0.0.0/0.
+1.18. 	Click Save.
+ 
+1.19. 	On the Services menu, click Amazon Redshift.
+1.20. 	In the navigation pane, choose Security.
+1.21. 	Select Subnet Groups and click Create Cluster Subnet Group.
+1.22. 	Enter the Name “redshift-sg”.
+1.23. 	Enter the Description “SG for redshift”.
+1.24. 	Select the VPC ID (vpc-xxxxxxxx)same as Redshift-VPC that you create before.
+1.25. 	Click add all the subnets then click Create.
+ 
+1.26. 	In the navigation pane, choose Clusters.
+1.27. 	Click Launch cluster
+1.28. 	Enter Cluster identifier “my-cluster”
+1.29. 	Enter Database name “mydb”
+1.30. 	Leave Database port for 5439
+1.31. 	Enter your own Master user name and Master user password and type again your password in Confirm password then click Continue. (e.g., Master user name: james, Master user password: James123)
+1.32. 	Select dc2.large for the Node type which is the cheapest cluster.
+1.33. 	Click Continue.
+1.34. 	Select VPC ID of “Redshift-VPC” in Choose a VPC blank.
+1.35. 	In Available roles choose SpectrumRole then click Continue.
+1.36. 	After examine that all setting is correct, click Launch cluster.
+(This instance will charged $0.25 hourly)
+Detail pricing issues https://aws.amazon.com/tw/redshift/pricing/#
+    At launching time, cluster creation times averaged 15 minutes
+ 
+1.37. 	On the Services menu, click AWS Glue.
+1.38. 	In the navigation pane, choose Connections.
+1.39. 	Click Add connection.
+1.40. 	Enter Connection name “redshift-spectrum”.
+1.41. 	Select Connection type “Amazon Redshift” and click next.
+1.42. 	Select my-cluster in Cluster blank.
+1.43. 	Enter Database name “mydb”.
+1.44. 	Enter your own Username and Password then click Next.
+1.45. 	Click Finish.
+1.46. 	Select redshift-spectrum and click Test connection.
+1.47. 	Select AWSGlueServiceRoleDefault as IAM role and click Test connection. You will find below screen after testing.
+ 
+ 
+1.48. 	On the Services menu, click AWS Glue.
+1.49. 	In the navigation pane, choose Jobs.
+1.50. 	Click Add job.
+1.51. 	Enter the Name “redshift-query”.
+1.52. 	Select AWSGlueServiceRoleDefault as IAM role and click Next.
+1.53. 	Select “usvideos_csv” and click Next.
+ 
+1.54. 	Choose Create tables in your data target.
+1.55. 	Select Data store as JDBC.
+1.56. 	Select redshift-spectrum for Connection and enter the Database name “mydb” then click Next.
+1.57. 	Click Next you will find this screen below.
+ 
+1.58. 	Click finish.
+1.59. 	View the job. This screen provides a complete view of the job and allows you to edit, click Save, and choose Run job. This steps may be waiting around 10 minutes.
+In this job, Glue send data to Redshift cluster and processing data by the cluster.
 
 
 

@@ -354,57 +354,62 @@ Download the file you will get the topic modeling result as csv file<br><br>
 
 ### Create a Lambda to trigger topic detection jobs by Comprehend (automated topic modeling job)
 
-1.1. 	On the Services menu, click Lambda.
-1.2. 	Click Create function.
-1.3. 	Choose Author from scratch.
-1.4. 	Enter function Name comprehend-lambda.
-1.5. 	Select python 3.6 in Runtime blank.
-1.6. 	Select Choose an existing role in Role blank and choose Comprehend-Job as Existing role.
-1.7. 	Click Create function.
-1.8. 	In configuration, click S3 below Add triggers to add trigger for comprehend-lambda function
-1.9. 	and drop down to Configure triggers part, select bucket “yourname-topic-analysis” as Bucket, select PUT as Event type. Remember to check Enable trigger box then you click Add.
- 
-1.10. 	Click comprehend-lambda blank in Designer and replace original code that existing in Function code editor with below code
-Input_s3_url = “s3://yourname-topic-analysis”
-output_s3_url = "s3://yourname-topic-analysis-result"
-data_access_role_arn = "arn:aws:iam::xxxxxxxxxxxx:role/service-role/AmazonComprehendServiceRoleS3FullAccess-user"
-(The arn of IAM role that you create in Amazon Comprehend console)
- 
-import boto3
-import json
+* 	On the **Services** menu, click **Lambda**.<br><br>
+* 	Click **Create function**.<br><br>
+* 	Choose **Author from scratch**.<br><br>
+* 	Enter function Name **comprehend-lambda**.<br><br>
+* 	Select **python 3.6** in **Runtime** blank.<br><br>
+* 	Select **Choose an existing role** in **Role** blank and choose **Comprehend-Job** as **Existing role**.<br><br>
+* 	Click **Create function**.<br><br>
+* 	In **configuration**, click **S3** below **Add triggers** to add trigger for **comprehend-lambda** function<br><br>
+* 	and drop down to **Configure triggers** part, select bucket **“yourname-topic-analysis”** as Bucket, select **PUT** as **Event type**. Remember to check Enable trigger box then you click **Add**.<br><br>
+![lambda_comprehend1.png](/images/lambda_comprehend1.png)<br>  
+* 	Click **comprehend-lambda** blank in **Designer** and replace original code that existing in **Function code** editor with below code<br><br>
 
-def lambda_handler(event, context):
-    # TODO implement
-    comprehend = boto3.client(service_name='comprehend', region_name='us-east-1')
-    input_s3_url = "s3://yourname-topic-analysis"
-    input_doc_format = "ONE_DOC_PER_LINE"
-    output_s3_url = "s3://yourname-topic-analysis-result"
-    data_access_role_arn = "arn:aws:iam::xxxxxxxxxxxx:role/service-role/AmazonComprehendServiceRoleS3FullAccess-user"
-    number_of_topics = 50
+*   Input_s3_url = “s3://yourname-topic-analysis”
+*   output_s3_url = "s3://yourname-topic-analysis-result"
+*   data_access_role_arn = "arn:aws:iam::xxxxxxxxxxxx:role/service-role/AmazonComprehendServiceRoleS3FullAccess-user"
+    (The arn of IAM role that you create in Amazon Comprehend console)<br>
  
-    input_data_config = {"S3Uri": input_s3_url, "InputFormat": input_doc_format}
-    output_data_config = {"S3Uri": output_s3_url}
+         import boto3
+         import json
+
+         def lambda_handler(event, context):
+             # TODO implement
+             comprehend = boto3.client(service_name='comprehend', region_name='us-east-1')
+             input_s3_url = "s3://yourname-topic-analysis"
+             input_doc_format = "ONE_DOC_PER_LINE"
+             output_s3_url = "s3://yourname-topic-analysis-result"
+             data_access_role_arn = "arn:aws:iam::xxxxxxxxxxxx:role/service-role/AmazonComprehendServiceRoleS3FullAccess-user"
+             number_of_topics = 50
+
+             input_data_config = {"S3Uri": input_s3_url, "InputFormat": input_doc_format}
+             output_data_config = {"S3Uri": output_s3_url}
+
+             start_topics_detection_job_result = comprehend.start_topics_detection_job(NumberOfTopics=number_of_topics,
+                                                                                       InputDataConfig=input_data_config,
+                                                                                       OutputDataConfig=output_data_config,
+                                                                                       DataAccessRoleArn=data_access_role_arn)
+             return start_topics_detection_job_result
  
-    start_topics_detection_job_result = comprehend.start_topics_detection_job(NumberOfTopics=number_of_topics,
-                                                                              InputDataConfig=input_data_config,
-                                                                              OutputDataConfig=output_data_config,
-                                                                              DataAccessRoleArn=data_access_role_arn)
-    return start_topics_detection_job_result
- 
-1.11. 	Click Save to save the change of function.
-1.12. 	Now you can upload a csv file into “yourname-topic-analysis” bucket to test that whether this Lambda function operating normally.
-1.13. 	On the Services menu, click S3.
-1.14. 	Click yourname-topic-analysis bucket.
-1.15. 	Click Upload.
-1.16. 	Click Add files.
-1.17. 	Select file word_analysis.csv and click Upload.
-1.18. 	When it upload finish go to your Amazon comprehend console
-1.19. 	Click Topic modeling
-1.20. 	You will find a new job is running
- 
-1.21. 	Download the output of job in yourname-topic-analysis-result bucket after job completed which is a result from topic modeling
- 
-     
+* 	Click **Save** to save the change of function.<br><br>
+* 	Now you can upload a csv file into **“yourname-topic-analysis”** bucket to test that whether this Lambda function operating normally.<br><br>
+* 	On the **Services** menu, click **S3**.<br><br>
+* 	Click **yourname-topic-analysis** bucket.<br><br>
+* 	Click **Upload**.<br><br>
+* 	Click **Add files****.<br><br>
+*	Select file **word_analysis.csv** and click **Upload**.<br><br>
+* 	When it upload finish go to your **Amazon comprehend** console<br><br>
+* 	Click **Topic modeling**<br><br>
+* 	**You will find a new job is running**<br><br>
+![lambda_comprehend2.png](/images/lambda_comprehend2.png)<br> 
+* 	Download the output of job in **yourname-topic-analysis-result** bucket after job completed which is a result from topic modeling<br><br>
+![lambda_comprehend3.png](/images/lambda_comprehend3.png)<br> 
+![lambda_comprehend4.png](/images/lambda_comprehend4.png)<br>     
+![lambda_comprehend5.png](/images/lambda_comprehend5.png)<br>
+![lambda_comprehend6.png](/images/lambda_comprehend6.png)<br>
+![lambda_comprehend7.png](/images/lambda_comprehend7.png)<br>
+![lambda_comprehend8.png](/images/lambda_comprehend8.png)<br>
 Congratulations! You now have learned how to setup an automated topic modeling job with Lambda function.
 
 

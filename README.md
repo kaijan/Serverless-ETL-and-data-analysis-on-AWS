@@ -640,3 +640,31 @@ Congratulations! You now have finished whole Lab and have learned how to do **Se
 
 
 ### Visualize data with Tableau
+
+When it comes to BI, Tableau is one of the best tools.<br><br>
+The following steps will integrate AWS services with Tableau. (Athena for this example)<br><br>
+* 	First you need to download Tableau on premise or on EC2.<br><br>
+Click below link to download<br><br>
+Note that download the version higher than 10.3 (10.5 for this example)<br><br>
+https://www.tableau.com/support/releases<br>
+https://www.tableau.com/support/releases/server<br>
+* 	Make sure that you have license to use Tableau<br><br>
+https://www.tableau.com/pricing<br>
+* 	Open Tableau you will see this screen (Tableau Desktop for example)<br><br>
+![tableau1.png](/images/tableau1.png)<br>  
+* 	To connect to Athena, click **Amazon Athena** in navigation pane left side <br><br>
+![tableau2.png](/images/tableau2.png)<br>
+* 	Enter **“Athena.us-east-1.amazonaws.com”** in **Server**<br><br>
+* 	Enter **port** for 443<br><br>
+* 	Enter Staging Directory for your **Athena query result S3 bucket**<br><br>
+* 	Enter **Access Key ID** and **Secret Access Key** then click **sign in**<br><br>
+![tableau3.png](/images/tableau3.png)<br> 
+* 	Select **AwsDataCatalog** in **Catalog** and select **my-data** in **database**<br><br>
+* 	Drag the table you want to make the chart for<br><br>
+![tableau4.png](/images/tableau4.png)<br><br>
+![tableau5.png](/images/tableau5.png)<br><br>
+1.11. 	Click **New Worksheet** icon below then you can start making your chart to do BI
+![tableau6.png](/images/tableau6.png)<br><br> 
+![tableau7.png](/images/tableau7.png)<br><br>
+![tableau8.png](/images/tableau8.png)<br><br>
+

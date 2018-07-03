@@ -397,7 +397,7 @@ Download the file you will get the topic modeling result as csv file<br><br>
 * 	On the **Services** menu, click **S3**.<br><br>
 * 	Click **yourname-topic-analysis** bucket.<br><br>
 * 	Click **Upload**.<br><br>
-* 	Click **Add files****.<br><br>
+* 	Click **Add files**.<br><br>
 *	Select file **word_analysis.csv** and click **Upload**.<br><br>
 * 	When it upload finish go to your **Amazon comprehend** console<br><br>
 * 	Click **Topic modeling**<br><br>

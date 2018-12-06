@@ -166,7 +166,7 @@ The fifth bucket stores the data that **complete topic detection job**<br>
 
 *  	Click **“yourname-dataset”** bucket.
 
-*  	Click **Upload****.
+*  	Click **Upload**.
 
 *  	Click **Add files**.
 

@@ -40,9 +40,11 @@ In this tutorial, we will create IAM roles for multiple AWS services, whcih is a
 * 	Click **Create policy**.<br>
 * 	Now confirm you have policies as below figure.<br>
 ![iam1.png](/images/iam1.png)<br> 
-Figure1: IAM role policies<br><br><br>
+
 You successfully create the role that allow AWS Glue get access to S3.<br>
- 
+
+### IAM role for automated ETL using AWS Lambda
+
 * 	Back to the navigation pane, choose **Roles**.<br>
 * 	Click **Create role**.<br>
 * 	For role type, choose **AWS Service**, find and choose **Lambda**, and choose **Next: Permissions**.<br>
@@ -73,9 +75,11 @@ You successfully create the role that allow AWS Glue get access to S3.<br>
 * 	Click **Create policy**.<br>
 * 	Now confirm you have policies as below figure.<br>
 ![iam2.png](/images/iam2.png)<br> 
-Figure2: IAM role policies<br><br><br>
+
 You successfully create the role that allow Lambda trigger ETL job automatically with AWS Glue by object put event of S3<br>
- 
+
+### IAM role for Comprehend job
+
 * 	Back to the navigation pane, choose **Roles**.<br>
 * 	Click **Create role**.<br>
 * 	For role type, choose **AWS Service**, find and choose **Lambda**, and choose **Next: Permissions**.<br>
@@ -86,9 +90,11 @@ You successfully create the role that allow Lambda trigger ETL job automatically
 * 	Choose **Roles** page, select the role **Comprehend-Job** you just created.<br>
 * 	On the **Permissions** tab, now confirm you have policies as below figure.<br>
 ![iam3.png](/images/iam3.png)<br> 
-Figure3: IAM role policies<br><br><br>
+
 You successfully create the role that allow Lambda trigger topic detection job automatically with Amazon Comprehend by object put event of S3<br>
- 
+
+### IAM role for Redshift
+
 * 	Back to the navigation pane, choose **Roles**.<br>
 * 	Click **Create role**.<br>
 * 	For role type, choose **AWS Service**, find and choose **Redshift**, and choose **Redshift – Customizable** below then click **Next: Permissions**.<br>
@@ -98,9 +104,8 @@ You successfully create the role that allow Lambda trigger topic detection job a
 * 	Click **Create role**.<br>
 * 	Choose **Roles** page, select the role **SpectrumRole** you just created. Now confirm you have below figure.<br>
 ![iam4.png](/images/iam4.png)<br> 
-Figure4: IAM role policies<br><br><br>
-You successfully create the role for Redshift clusters to call S3, Athena and Glue service<br>
 
+You successfully create the role for Redshift clusters to call S3, Athena and Glue service<br>
 
 
 ### Create S3 bucket to store data

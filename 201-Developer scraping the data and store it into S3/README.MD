@@ -1,4 +1,4 @@
-## Developer scraping the data and store it into S3
+# Developer scraping the data and store it into S3
 
 In this tutorial, we will create IAM roles for multiple AWS services, whcih is a web service that helps you securely control access to AWS resources. You use IAM to control who is authenticated (signed in) and authorized (has permissions) to use resources.
 

@@ -110,14 +110,14 @@ You successfully create the role for Redshift clusters to call S3, Athena and Gl
 
 ### Create S3 bucket to store data
 
-The first bucket stores the data that contain YouTube trending data<br><br>
-The second bucket stores the data that after **doing csv ETL process**<br><br>The 
-The third bucket stores the data that after **doing json ETL process**<br><br>
-The fourth bucket stores the data that **doing topic detection job**<br><br>
-The fifth bucket stores the data that **complete topic detection job**<br><br>
-* 	On the service menu, click **S3**.<br><br>
-*  	Click **Create bucket**.<br><br>
-*  	Enter the Bucket name ****“yourname-dataset” (e.g., james-dataset)** and ensure that the bucket name is unique so that you can create.<br><br>
+The first bucket stores the data that contain YouTube trending data<br>
+The second bucket stores the data that after **doing csv ETL process**<br>The 
+The third bucket stores the data that after **doing json ETL process**<br>
+The fourth bucket stores the data that **doing topic detection job**<br>
+The fifth bucket stores the data that **complete topic detection job**<br>
+* 	On the service menu, click **S3**.<br>
+*  	Click **Create bucket**.<br>
+*  	Enter the Bucket name ****“yourname-dataset” (e.g., james-dataset)** and ensure that the bucket name is unique so that you can create.<br>
 *  	Click **Create**.<br><br>
 *  	Click **“yourname-dataset”** bucket<br><br>
 *  	Click **Upload****.<br><br>

@@ -200,4 +200,4 @@ The fifth bucket stores the data that **complete topic detection job**<br>
 
 ![s3_buckets.png](/images/s3_buckets.png)<br>  
 
-### C
+### Now you are ready to

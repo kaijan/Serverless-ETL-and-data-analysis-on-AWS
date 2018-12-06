@@ -200,4 +200,4 @@ The fifth bucket stores the data that **complete topic detection job**<br>
 
 ![s3_buckets.png](/images/s3_buckets.png)<br>  
 
-### Now you are ready to
+### Now you are ready to [trigger a Lambda function to do ETL with Glue]

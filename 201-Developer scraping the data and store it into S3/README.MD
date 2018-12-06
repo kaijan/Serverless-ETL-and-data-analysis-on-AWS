@@ -4,7 +4,8 @@ In this tutorial, we will create IAM roles for multiple AWS services, whcih is a
 
 ## Create following IAM roles
 
-1. IAM role for AWS Glue
+### IAM role for AWS Glue
+
 * 	On the **service** menu, click **IAM**.<br>
 * 	In the navigation pane, choose **Roles**.<br>
 * 	Click **Create role**.<br>

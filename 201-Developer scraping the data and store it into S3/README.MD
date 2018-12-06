@@ -6,8 +6,10 @@ In this tutorial, we will create IAM roles for multiple AWS services, whcih is a
 
 ### IAM role for AWS Glue
 
-* 	On the **service** menu, click **IAM**.<br>
-* 	In the navigation pane, choose **Roles**.<br>
+* 	On the **service** menu, click **IAM**.
+
+* 	In the navigation pane, choose **Roles**.
+
 * 	Click **Create role**.<br>
 * 	For role type, choose **AWS Service**, find and choose **Glue**, and choose **Next: Permissions**.<br>
 * 	On the **Attach permissions policy** page, search and choose **AmazonS3FullAccess, AWSGlueServiceRole**, and choose **Next: Review**.<br>

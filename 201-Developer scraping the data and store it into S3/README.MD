@@ -148,7 +148,7 @@ You successfully create the role that allow Lambda trigger topic detection job a
 You successfully create the role for Redshift clusters to call S3, Athena and Glue service.<br><br>
 
 
-### Create S3 bucket to store data
+## Create S3 bucket to store data
 
 The first bucket stores the data that contain YouTube trending data<br>
 The second bucket stores the data that after **doing csv ETL process**<br>The 

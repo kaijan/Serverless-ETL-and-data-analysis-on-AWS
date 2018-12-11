@@ -51,8 +51,7 @@ Now you finish the crawler setting, and going to create a job to transform data 
 * 	In the navigation pane, under **ETL**, choose **Jobs**, and then choose **Add job**.
 
 * 	On the Job properties, enter the following details:
-
-> **Name: data-csv-parquet**
+ **Name: data-csv-parquet**
 
   **IAM role:** choose **AWSGlueServiceRoleDefault**
 

@@ -180,13 +180,6 @@ Now you need to add another parquet table and crawler
 
 ![glue13.png](/images/glue13.png)
 
-
-### Congratulations! You now have learned how to:
-
-*  Processing ETL job manually using AWS Glue and Amazon S3.
-
-*  Crawler your data to Amazon S3 by AWS Glue.
-
 Next step you will learn how to trigger ETL job with Lambda function automatically
 
 
@@ -241,7 +234,14 @@ Next step you will learn how to trigger ETL job with Lambda function automatical
 
 ![lambda_glue5.png](/images/lambda_glue5.png)
 
-### Congratulations! You now have learned how to setup an automated ETL job with Lambda function.
+
+### Congratulations! You now have learned how to:
+
+*  Processing ETL job manually using AWS Glue and Amazon S3.
+
+*  Crawler your data to Amazon S3 by AWS Glue.
+
+*  Setup an automated ETL job with Lambda function.
 
 ## Now you are ready to use [AWS Comprehend to do topic modeling job](https://github.com/ecloudvalley/Serverless-ETL-and-data-analysis-on-AWS/tree/master/203-Using%20AWS%20Comprehend%20do%20topic%20modeling%20job)
 

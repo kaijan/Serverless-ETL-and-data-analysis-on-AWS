@@ -78,14 +78,12 @@ Now you finish the crawler setting, and going to create a job to transform data 
 
 ![glue6.png](/images/glue6.png)
 
-
-Job running screen
-
 * 	When job finished, go to your S3 bucket **“yourname-etl-result”** ensure there is a parquet file that means your job succeed.
 
 ![glue7.png](/images/glue7.png)
 
-Now you need to add another parquet table and crawler
+
+### Add another parquet table and crawler
 
 * 	When the job has finished, add a new table for the Parquet data using a crawler.
 
@@ -99,13 +97,11 @@ Now you need to add another parquet table and crawler
 
 *	On **Add another data store** page, choose **No**, and choose **Next**.
 
-* 	Select **Choose an existing IAM role**, and choose the role 
-
-**AWSGlueServiceRoleDefault** you just created in the drop-down list, and choose Next.
+* 	Select **Choose an existing IAM role**, and choose the role **AWSGlueServiceRoleDefault** you just created in the drop-down list, and choose **Next**.
 
 * 	For **Frequency**, choose **Run on demand**, and choose **Next**.
 
-* 	For **Database****, choose **my-data**, and choose **Next**.
+* 	For **Database**, choose **my-data**, and choose **Next**.
 
 * 	Review the steps, and choose **Finish**.
 
@@ -113,8 +109,9 @@ Now you need to add another parquet table and crawler
 
 * 	After the crawler has finished, there is a new table in the **my-data** database:
 
-![glue8.png](/images/glue8.png)<br>  
-That means you finish the ETL process of csv to parquet format **(USvideos.csv)**
+![glue8.png](/images/glue8.png)
+
+That means you finish the ETL process of csv to parquet format **(USvideos.csv)**.
 
 In order to analyze the channel category, we need to perform another job in Glue data catalog which contains category data (**US-category-id.json**)
 

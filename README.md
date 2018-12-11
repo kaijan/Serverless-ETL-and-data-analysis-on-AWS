@@ -35,8 +35,6 @@ As illustrated in the preceding diagram, this is a big data processing in this m
 What is AWS Glue?
 AWS Glue is a fully managed data catalog and ETL (extract, transform, and load) service that simplifies and automates the difficult and time-consuming tasks of data discovery, conversion, and job scheduling. AWS Glue crawls your data sources and constructs a data catalog using pre-built classifiers for popular data formats and data types, including CSV, Apache Parquet, JSON, and more. It is significantly reducing the time and effort that it takes to derive business insights quickly from an Amazon S3 data lake by discovering the structure and form of your data. Also automatically crawls your Amazon S3 data, identifies data formats, and then suggests schemas for use with other AWS analytic services. 
 
-### The workshop’s region will be in ‘Virginia’
-
 
 ## Prerequisites
 1.	Sign-in a AWS account, and make sure you have select **N.Virginia** region<br>

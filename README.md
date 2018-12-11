@@ -15,16 +15,19 @@ https://www.kaggle.com/datasnaek/youtube-new<br><br>
 With the large growth of YouTube, it plays an important role of video service. The large company also use it to determine their ads strategies and marketing plans.
 This use case using trending YouTube video data to analyze which video channel or video type are suitable for advertising. In addition, YouTubers can make themselves more popular by analyzing the trending videos of YouTube. We use AWS Glue to do serverless ETL job and analyze those big data automatically with BI tool that integrate with AWS Athena or AWS Redshift Spectrum.
 
-
-
 ![preview_data1.png](/images/preview_data1.png)<br>
 ![preview_data2.png](/images/preview_data2.png)<br>
+
+
+## You will Learn
+![learnflow.png](/images/learnflow.png)<br>
+
 
 ## Lab Architecture
 ![lab_architecture.png](/images/lab_architecture.png)
 
 As illustrated in the preceding diagram, this is a big data processing in this model:<br><br>
-* 1.&nbsp;&nbsp; 	Developer scraping the data and store it into S3.<br><br>
+1.&nbsp;&nbsp; 	Developer scraping the data and store it into S3.<br><br>
 * 2.&nbsp;&nbsp; 	Once S3 get the data then trigger a Lambda function to do ETL with Glue.<br><br>
 * 3.&nbsp;&nbsp; 	On the other hand, AWS Comprehend doing topic modeling job as sentiment analysis with certain data.<br><br>
 * 4.&nbsp;&nbsp; 	Athena or Redshift Spectrum will perform query job known as data analysis when ETL job finished. <br><br>
@@ -42,7 +45,7 @@ AWS Glue is a fully managed data catalog and ETL (extract, transform, and load) 
 3.	Download **this repository** and unzip, ensure that **data** folder including three files:<br>
 **USvideos.csv**, **US-category-id.json**, **word_analysis.csv**<br>
 
-![learnflow.png](/images/learnflow.png)<br>
+
 
 ## Lab tutorial
 

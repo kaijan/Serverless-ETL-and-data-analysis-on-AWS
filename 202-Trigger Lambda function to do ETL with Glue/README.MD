@@ -1,3 +1,6 @@
+## Trigger Lambda function to do ETL with Glue
+
+After you upload data into S3, then trigger a Lambda function to do ETL which is a type of data integration that refers to the three steps (Extrect, Transform and Load) used to blend data from multiple sources, here we will use [AWS Glue](https://aws.amazon.com/tw/glue/) to do it.
 
 
 ### Setup data catalog in AWS Glue

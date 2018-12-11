@@ -46,7 +46,7 @@ Create database, tables, crawlers, jobs in Glue
 Now you finish the crawler setting, and going to create a job to transform data type.
 
 
-### Add jobs
+### Add jobs to transform the Data from CSV to Parquet format
 
 * 	In the navigation pane, under **ETL**, choose **Jobs**, and then choose **Add job**.
 
@@ -77,6 +77,7 @@ Now you finish the crawler setting, and going to create a job to transform data 
 * 	View the job. This screen provides a complete view of the job and allows you to edit, click **Save**, and choose **Run job**. This steps may be waiting around 10 minutes.
 
 ![glue6.png](/images/glue6.png)
+
 
 Job running screen
 

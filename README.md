@@ -27,11 +27,11 @@ This use case using trending YouTube video data to analyze which video channel o
 ![lab_architecture.png](/images/lab_architecture.png)
 
 As illustrated in the preceding diagram, this is a big data processing in this model:<br>
-1.&nbsp;&nbsp; 	Developer scraping the data and store it into S3.<br>
-2.&nbsp;&nbsp; 	Once S3 get the data then trigger a Lambda function to do ETL with Glue.<br>
-3.&nbsp;&nbsp; 	On the other hand, AWS Comprehend doing topic modeling job as sentiment analysis with certain data.<br>
-4.&nbsp;&nbsp; 	Athena or Redshift Spectrum will perform query job known as data analysis when ETL job finished. <br>
-5.&nbsp;&nbsp; 	BI tool like QuickSight or Tableau do real time data visualization.<br>
+1. Developer scraping the data and store it into S3.<br>
+2. Once S3 get the data then trigger a Lambda function to do ETL with Glue.<br>
+3. On the other hand, AWS Comprehend doing topic modeling job as sentiment analysis with certain data.<br>
+4. Athena or Redshift Spectrum will perform query job known as data analysis when ETL job finished. <br>
+5. BI tool like QuickSight or Tableau do real time data visualization.<br>
 
 ## AWS Glue introduction
 What is AWS Glue?

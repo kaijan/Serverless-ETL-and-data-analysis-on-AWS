@@ -2,7 +2,7 @@
 
 In this tutorial, we will create IAM roles for multiple AWS services, whcih is a web service that helps you securely control access to AWS resources. You use IAM to control who is authenticated (signed in) and authorized (has permissions) to use resources.
 
-## Create following IAM roles
+## Create IAM roles
 
 ### IAM role for AWS Glue
 
@@ -53,9 +53,9 @@ In this tutorial, we will create IAM roles for multiple AWS services, whcih is a
 
 * 	Now confirm you have policies as below figure.
 
-![iam1.png](/images/iam1.png)<br> 
+![iam1.png](/images/iam1.png)
 
-You successfully create the role that allow AWS Glue get access to S3.<br><br>
+You successfully create the role that allow AWS Glue get access to S3.
 
 ### IAM role for automated ETL job using AWS Lambda
 

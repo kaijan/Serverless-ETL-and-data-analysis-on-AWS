@@ -3,15 +3,19 @@
 After you upload data into S3, then trigger a Lambda function to do ETL which is a type of data integration that refers to the three steps (Extrect, Transform and Load) used to blend data from multiple sources, here we will use [AWS Glue](https://aws.amazon.com/tw/glue/) to do it. [How it works?](https://docs.aws.amazon.com/glue/latest/dg/how-it-works.html)
 
 
-### Setup data catalog in AWS Glue
+## Setup data catalog in AWS Glue
 
 Create database, tables, crawlers, jobs in Glue
+
+### Add crawler
 
 * 	On the **Services** menu, click **AWS Glue**.
 
 * 	In the console, choose **Add database**. In the **Database name**, type **my-data**, and choose **Create**.
 
-* 	Choose **Crawlers** in the navigation pane, choose **Add crawler**. Add type Crawler name **data-crawler**, and choose **Next**.
+* 	Choose **Crawlers** in the navigation pane, choose **Add crawler**. 
+
+*  Type Crawler name **data-crawler**, and choose **Next**.
 
 * 	On the **Add a data store** page, choose **S3** as data store.
 

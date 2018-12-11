@@ -5,7 +5,7 @@ After you upload data into S3, then trigger a Lambda function to do ETL which is
 
 ## Setup data catalog in AWS Glue
 
-Create database, tables, crawlers, jobs in Glue
+The AWS Glue Data Catalog is your persistent metadata store. It is a managed service that lets you store, annotate, and share metadata in the AWS Cloud in the same way you would in an Apache Hive metastore. Now we will create database, tables, crawlers, jobs in AWS Glue.
 
 ### Add crawler
 

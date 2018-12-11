@@ -55,7 +55,7 @@ In this tutorial, we will create IAM roles for multiple AWS services, whcih is a
 
 ![iam1.png](/images/iam1.png)
 
-You successfully create the role that allow AWS Glue get access to S3.
+You successfully create the role that allow AWS Glue get access to S3.<br><br>
 
 ### IAM role for automated ETL job using AWS Lambda
 
@@ -156,7 +156,7 @@ The third bucket stores the data that after **doing json ETL process**<br>
 The fourth bucket stores the data that **doing topic detection job**<br>
 The fifth bucket stores the data that **complete topic detection job**<br>
 
-* 	On the service menu, click **S3**.
+* 	On the **service** menu, click **S3**.
 
 *  	Click **Create bucket**.
 

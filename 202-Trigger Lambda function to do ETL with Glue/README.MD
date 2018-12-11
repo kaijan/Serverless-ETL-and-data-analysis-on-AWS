@@ -52,7 +52,7 @@ Now you finish the crawler setting, and going to create a job to transform data 
 
 * 	On the Job properties, enter the following details:
 
-  **Name: data-csv-parquet**
+  -- **Name: data-csv-parquet**
 
   **IAM role:** choose **AWSGlueServiceRoleDefault**
 

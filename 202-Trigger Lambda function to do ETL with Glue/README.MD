@@ -83,7 +83,7 @@ Now you finish the crawler setting, and going to create a job to transform data 
 ![glue7.png](/images/glue7.png)
 
 
-### Add another parquet table and crawler
+### Add another parquet table and crawler for USvideos.csv
 
 * 	When the job has finished, add a new table for the Parquet data using a crawler.
 
@@ -111,7 +111,10 @@ Now you finish the crawler setting, and going to create a job to transform data 
 
 ![glue8.png](/images/glue8.png)
 
-That means you finish the ETL process of csv to parquet format **(USvideos.csv)**.
+* That means you finish the ETL process of csv to parquet format **(USvideos.csv)**.
+
+
+### Add jobs for data of US-category-id
 
 In order to analyze the channel category, we need to perform another job in Glue data catalog which contains category data (**US-category-id.json**).
 
@@ -177,11 +180,12 @@ Now you need to add another parquet table and crawler
 
 ![glue13.png](/images/glue13.png)
 
-##### Congratulations! You now have learned how to:
 
-•	Processing ETL job manually using AWS Glue and Amazon S3.
+### Congratulations! You now have learned how to:
 
-•	Crawler your data to Amazon S3 by AWS Glue.
+*  Processing ETL job manually using AWS Glue and Amazon S3.
+
+*  Crawler your data to Amazon S3 by AWS Glue.
 
 Next step you will learn how to trigger ETL job with Lambda function automatically
 
@@ -237,7 +241,7 @@ Next step you will learn how to trigger ETL job with Lambda function automatical
 
 ![lambda_glue5.png](/images/lambda_glue5.png)
 
-##### Congratulations! You now have learned how to setup an automated ETL job with Lambda function.
+### Congratulations! You now have learned how to setup an automated ETL job with Lambda function.
 
 Now you are ready to use [AWS Comprehend to do topic modeling job](https://github.com/ecloudvalley/Serverless-ETL-and-data-analysis-on-AWS/tree/master/203-Using%20AWS%20Comprehend%20do%20topic%20modeling%20job)
 

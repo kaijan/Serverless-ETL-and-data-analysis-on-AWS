@@ -21,7 +21,7 @@ Create database, tables, crawlers, jobs in Glue
 
 * 	Select **Specified path in my account**.
 
-* 	Select the bucket that you create first (**“yourname-dataset”****), and choose **Next**.
+* 	Select the bucket that you create first (**“yourname-dataset”**), and choose **Next**.
 
 ![glue1.png](/images/glue1.png)
 
@@ -44,7 +44,10 @@ Create database, tables, crawlers, jobs in Glue
 ![glue3.png](/images/glue3.png)
 
 Now you finish the crawler setting, and going to create a job to transform data type.
- 
+
+
+### Add jobs
+
 * 	In the navigation pane, under **ETL**, choose **Jobs**, and then choose **Add job**.
 
 * 	On the Job properties, enter the following details:

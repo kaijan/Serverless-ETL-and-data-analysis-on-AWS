@@ -6,6 +6,8 @@ Next, let's use Amazon Comprehend to create and manage asynchronous topic detect
 
 ## Setup topic detection jobs by Amazon Comprehend
 
+Amazon Comprehend uses a pre-trained model to examine and analyze a document or set of documents to gather insights about it. This model is continuously trained on a large body of text so that there is no need for you to provide training data. Topic modeling can search the content of documents to determine common themes and topics.
+
 ### To create a topic detection job
 
 * 	On the **Services** menu, click **Amazon Comprehend**.
@@ -163,6 +165,11 @@ Next, let's use Amazon Comprehend to create and manage asynchronous topic detect
 
 ![lambda_comprehend8.png](/images/lambda_comprehend8.png)
 
-Congratulations! You now have learned how to setup an automated topic modeling job with Lambda function.
+## Congratulations! You now have learned how to:
 
-Now you are ready to
+*  Using AWS Comprehend do topic modeling job.
+
+*  Setup an automated topic modeling job with Lambda function.
+
+
+### Now you are ready to Analyze the data with Athena & Redshift

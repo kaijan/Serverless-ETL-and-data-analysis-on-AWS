@@ -89,18 +89,14 @@ Next, let's use Amazon Comprehend to create and manage asynchronous topic detect
 
 * 	Click **Create function**.
 
-* 	In **configuration**, click **S3** below **Add triggers** to add trigger for **comprehend-lambda** function
-
-* 	and drop down to **Configure triggers** part, select bucket **“yourname-topic-analysis”** as Bucket, select **PUT** as **Event type**. Remember to check Enable trigger box then you click **Add**.
-
-![lambda_comprehend1.png](/images/lambda_comprehend1.png)
-
 * 	Click **comprehend-lambda** blank in **Designer** and replace original code that existing in **Function code** editor with below code
 
-*   Input_s3_url = “s3://yourname-topic-analysis”
-*   output_s3_url = "s3://yourname-topic-analysis-result"
-*   data_access_role_arn = "arn:aws:iam::xxxxxxxxxxxx:role/service-role/AmazonComprehendServiceRoleS3FullAccess-user"
-    (The arn of IAM role that you create in Amazon Comprehend console)
+    *   Input_s3_url = “s3://yourname-topic-analysis”
+    
+    *   output_s3_url = "s3://yourname-topic-analysis-result"
+    
+    *   data_access_role_arn = "arn:aws:iam::xxxxxxxxxxxx:role/service-role/AmazonComprehendServiceRoleS3FullAccess-user"
+        (The arn of IAM role that you create in Amazon Comprehend console)
  
          import boto3
          import json
@@ -123,6 +119,13 @@ Next, let's use Amazon Comprehend to create and manage asynchronous topic detect
                                                                                        DataAccessRoleArn=data_access_role_arn)
              return start_topics_detection_job_result
  
+
+* 	In **configuration**, click **S3** below **Add triggers** to add trigger for **comprehend-lambda** function
+
+* 	and drop down to **Configure triggers** part, select bucket **“yourname-topic-analysis”** as Bucket, select **PUT** as **Event type**. Remember to check Enable trigger box then you click **Add**.
+
+![lambda_comprehend1.png](/images/lambda_comprehend1.png)
+
 * 	Click **Save** to save the change of function.
 
 * 	Now you can upload a csv file into **“yourname-topic-analysis”** bucket to test that whether this Lambda function operating normally.

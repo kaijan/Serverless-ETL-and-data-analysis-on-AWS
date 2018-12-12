@@ -4,10 +4,15 @@ You use AWS Glue to set up and manage your extract, transform, and load (ETL) wo
 
 Next, let's use Amazon Comprehend to create and manage asynchronous topic detection jobs.
 
+## Setup topic detection jobs by Amazon Comprehend
 
-### Setup your first topic detection jobs by Amazon Comprehend
+### To create a topic detection job
 
 * 	On the **Services** menu, click **Amazon Comprehend**.
+
+*   Click **Try Amazon Comprehend**.
+
+*   Click **switch to the old console** on the top of console.
 
 * 	In the navigation pane, click **Topic modeling**.
 

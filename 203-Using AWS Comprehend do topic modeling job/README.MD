@@ -71,7 +71,9 @@ Next, let's use Amazon Comprehend to create and manage asynchronous topic detect
 ![setup_comprehend8.png](/images/setup_comprehend8.png)
 
 
-### Create a Lambda to trigger topic detection jobs by Comprehend (automated topic modeling job)
+## Automated topic modeling job
+
+### Create a Lambda to trigger topic detection jobs by Amazon Comprehend
 
 * 	On the **Services** menu, click **Lambda**.
 

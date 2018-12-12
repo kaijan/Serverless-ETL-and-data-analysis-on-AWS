@@ -2,39 +2,60 @@ U
 
 ### Analyze the data with Athena & Redshift Spectrum
 
-Athena can query the data in an easy way with data catalog of Glue<br><br>
-* 	On the **Services** menu, click **Athena**.<br><br>
-* 	On the **Query Editor** tab, choose the database **my-data**.<br><br>
-![athena1.png](/images/athena1.png)<br> 
-* 	Choose the **yourname_etl_result** table.<br><br>
-* 	Query the data, type below standard SQL:<br><br>
+Athena can query the data in an easy way with data catalog of Glue
+
+* 	On the **Services** menu, click **Athena**.
+
+* 	On the **Query Editor** tab, choose the database **my-data**.
+
+![athena1.png](/images/athena1.png)
+
+* 	Choose the **yourname_etl_result** table.
+
+* 	Query the data, type below standard SQL:
 
          Select * From "my-data"."yourname_etl_result" limit 100;
          (e.g., Select * From "my-data"."james_etl_result" limit 100;)
 
-* 	Click **Run Query** and Athena will query data as the below screen<br><br>
-![athena2.png](/images/athena2.png)<br>  
-* 	Choose the **yourname_etl_result2** table.<br><br>
-* 	Query the data, type below standard SQL:<br><br>
+* 	Click **Run Query** and Athena will query data as the below screen
+
+![athena2.png](/images/athena2.png)
+
+* 	Choose the **yourname_etl_result2** table.
+
+* 	Query the data, type below standard SQL:
 
          Select * From "my-data"."yourname_etl_result2";
          (e.g., Select * From "my-data"."james_etl_result2";)
 
-Click **Run Query** and Athena will query data as the below screen<br><br>
- ![athena3.png](/images/athena3.png)<br> 
+Click **Run Query** and Athena will query data as the below screen
+
+ ![athena3.png](/images/athena3.png)
  
-After finish analyzing data in Athena, get start with data analysis with **Redshift Spectrum**. **Different from Athena, Redshift is suitable for long term workflow of data analysis that often processing structural data query job**.<br><br>
-*	First setup VPC in which you want to create your cluster<br><br>
-*	Launch Redshift cluster and connect to AWS Glue<br><br>
-* 	On the **Services** menu, click **VPC**.<br><br>
-* 	Click **Start VPC Wizard**.<br><br>
-* 	In this workshop we simply choose **VPC with a single Public Subnet**<br><br>
-* 	Enter your VPC name **“Redshift-VPC”**.<br><br>
-* 	Click **Add Endpoint** below **Service endpoints** and select **com.amazonaws.us-east-1.s3** as service.<br><br>
-![redshift1.png](/images/redshift1.png)<br> 
-* 	Click **Create VPC**.<br><br>
-* 	In the navigation pane, choose **Security Groups**.<br><br>
-* 	Select the Security Group that attach on **“Redshift-VPC”** which group name is **default** then select **Inbound Rules**.<br><br>
+After finish analyzing data in Athena, get start with data analysis with **Redshift Spectrum**. **Different from Athena, Redshift is suitable for long term workflow of data analysis that often processing structural data query job**.
+
+*	First setup VPC in which you want to create your cluster
+
+*	Launch Redshift cluster and connect to AWS Glue
+
+* 	On the **Services** menu, click **VPC**.
+
+* 	Click **Start VPC Wizard**.
+
+* 	In this workshop we simply choose **VPC with a single Public Subnet**
+
+* 	Enter your VPC name **“Redshift-VPC”**.
+
+* 	Click **Add Endpoint** below **Service endpoints** and select **com.amazonaws.us-east-1.s3** as service.
+
+![redshift1.png](/images/redshift1.png)
+
+* 	Click **Create VPC**.
+
+* 	In the navigation pane, choose **Security Groups**.
+
+* 	Select the Security Group that attach on **“Redshift-VPC”** which group name is **default** then select **Inbound Rules**.
+
 * 	Click **Edit**<br><br>
 *	Click **Add another rule** below, **Type** for **ALL Traffic**, Source for **0.0.0.0/0**.<br><br><br><br>
 * 	Click **Save**.<br><br>

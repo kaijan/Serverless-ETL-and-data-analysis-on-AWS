@@ -1,6 +1,6 @@
-U
+# Analyze the data with Athena and Redshift
 
-### Analyze the data with Athena & Redshift Spectrum
+##
 
 Athena can query the data in an easy way with data catalog of Glue
 
@@ -56,60 +56,117 @@ After finish analyzing data in Athena, get start with data analysis with **Redsh
 
 * 	Select the Security Group that attach on **“Redshift-VPC”** which group name is **default** then select **Inbound Rules**.
 
-* 	Click **Edit**<br><br>
-*	Click **Add another rule** below, **Type** for **ALL Traffic**, Source for **0.0.0.0/0**.<br><br><br><br>
-* 	Click **Save**.<br><br>
-![redshift2.png](/images/redshift2.png)<br>  
-* 	On the **Services** menu, click **Amazon Redshift**.<br><br>
-* 	In the navigation pane, choose **Security**.<br><br>
-* 	Select **Subnet Groups** and click **Create Cluster Subnet Group**.<br><br>
-*	Enter the **Name “redshift-sg”**.<br><br>
-* 	Enter the **Description “SG for redshift”**.<br><br>
-* 	Select the **VPC ID** (vpc-xxxxxxxx)same as **Redshift-VPC** that you create before.<br><br>
-* 	Click **add all the subnets** then click **Create**.<br><br>
-![redshift3.png](/images/redshift3.png)<br>  
-* 	In the navigation pane, choose **Clusters**.<br><br>
-* 	Click **Launch cluster**<br><br>
-* 	Enter **Cluster identifier “my-cluster”**<br><br>
-* 	Enter **Database name “mydb”**<br><br>
-* 	Leave **Database port** for **5439**<br><br>
-* 	Enter your own **Master user name** and **Master user password** and type again your password in **Confirm password** then click **Continue**. (e.g., Master user name: james, Master user password: James123)<br><br>
-* 	Select **dc2.large** for the **Node type** which is the cheapest cluster.<br><br>
-* 	Click **Continue**.<br><br>
-* 	Select VPC ID of **“Redshift-VPC”** in **Choose a VPC** blank.<br><br>
-* 	In **Available roles** choose **SpectrumRole** then click **Continue**.<br><br>
-* 	After examine that all setting is correct, click **Launch cluster**.<br>
-(**This instance will charged $0.25 hourly**)<br>
-Detail pricing issues https://aws.amazon.com/tw/redshift/pricing/#<br>
-    At launching time, cluster creation times averaged 15 minutes<br><br>
-![redshift4.png](/images/redshift4.png)<br>  
-* 	On the **Services** menu, click **AWS Glue**.<br><br>
-* 	In the navigation pane, choose **Connections**.<br><br>
-* 	Click **Add connection**.<br><br>
-* 	Enter **Connection name “redshift-spectrum”**.<br><br>
-* 	Select **Connection type “Amazon Redshift”** and click **next**.<br><br>
-* 	Select **my-cluster** in **Cluster** blank.<br><br>
-* 	Enter **Database name “mydb”**.<br><br>
-* 	Enter your own **Username** and **Password** then click **Next**.<br><br>
-* 	Click **Finish**.<br><br>
-* 	Select **redshift-spectrum** and click **Test connection**.<br><br>
-* 	Select **AWSGlueServiceRoleDefault** as **IAM role** and click **Test connection**. You will find below screen after testing.<br><br>
-![redshift5.png](/images/redshift5.png)<br>  
-![redshift6.png](/images/redshift6.png)<br>  
-* 	On the **Services** menu, click **AWS Glue**.<br><br>
-* 	In the navigation pane, choose **Jobs**.<br><br>
-*.	Click **Add job**.<br><br>
-* 	Enter the **Name “redshift-query”**.<br><br>
-* 	Select **AWSGlueServiceRoleDefault** as **IAM role** and click **Next**.<br><br>
-* 	Select **“usvideos_csv”** and click **Next**.<br><br>
-![redshift7.png](/images/redshift7.png)<br>  
-* 	Choose **Create tables in your data target**.<br><br>
-* 	Select **Data store** as **JDBC**.<br><br>
-* 	Select **redshift-spectrum** for **Connection** and enter the **Database name “mydb”** then click **Next**.<br><br>
-* 	Click **Next** you will find this screen below.<br><br>
-![redshift8.png](/images/redshift8.png)<br>  
-* 	Click **finish**.<br><br>
-* 	View the job. This screen provides a complete view of the job and allows you to edit, click **Save**, and choose **Run job**. This steps may be waiting around 10 minutes.<br><br>
-In this job, Glue send data to Redshift cluster and processing data by the cluster.<br><br>
-![redshift9.png](/images/redshift9.png)<br> 
+* 	Click **Edit**.
+
+*	Click **Add another rule** below, **Type** for **ALL Traffic**, Source for **0.0.0.0/0**.
+
+* 	Click **Save**.
+
+![redshift2.png](/images/redshift2.png)
+
+* 	On the **Services** menu, click **Amazon Redshift**.
+
+* 	In the navigation pane, choose **Security**.
+
+* 	Select **Subnet Groups** and click **Create Cluster Subnet Group**.
+
+*	Enter the **Name “redshift-sg”**.
+
+* 	Enter the **Description “SG for redshift”**.
+
+* 	Select the **VPC ID** (vpc-xxxxxxxx)same as **Redshift-VPC** that you create before.
+
+* 	Click **add all the subnets** then click **Create**.
+
+![redshift3.png](/images/redshift3.png)
+
+* 	In the navigation pane, choose **Clusters**.
+
+* 	Click **Launch cluster**
+
+* 	Enter **Cluster identifier “my-cluster”**
+
+* 	Enter **Database name “mydb”**
+
+* 	Leave **Database port** for **5439**
+
+* 	Enter your own **Master user name** and **Master user password** and type again your password in **Confirm password** then click **Continue**. (e.g., Master user name: james, Master user password: James123)
+>
+* 	Select **dc2.large** for the **Node type** which is the cheapest cluster.
+
+* 	Click **Continue**.
+
+* 	Select VPC ID of **“Redshift-VPC”** in **Choose a VPC** blank.
+
+* 	In **Available roles** choose **SpectrumRole** then click **Continue**.
+
+* 	After examine that all setting is correct, click **Launch cluster**.
+
+(**This instance will charged $0.25 hourly**)
+
+Detail pricing issues https://aws.amazon.com/tw/redshift/pricing/#
+
+    At launching time, cluster creation times averaged 15 minutes
+    
+![redshift4.png](/images/redshift4.png)
+
+* 	On the **Services** menu, click **AWS Glue**.
+
+* 	In the navigation pane, choose **Connections**.
+
+* 	Click **Add connection**.
+
+* 	Enter **Connection name “redshift-spectrum”**.
+
+* 	Select **Connection type “Amazon Redshift”** and click **next**.
+
+* 	Select **my-cluster** in **Cluster** blank.
+
+* 	Enter **Database name “mydb”**.
+
+* 	Enter your own **Username** and **Password** then click **Next**.
+
+* 	Click **Finish**.
+
+* 	Select **redshift-spectrum** and click **Test connection**.
+
+* 	Select **AWSGlueServiceRoleDefault** as **IAM role** and click **Test connection**. You will find below screen after testing.
+
+![redshift5.png](/images/redshift5.png)
+
+![redshift6.png](/images/redshift6.png)
+
+* 	On the **Services** menu, click **AWS Glue**.
+
+* 	In the navigation pane, choose **Jobs**.
+
+*.	Click **Add job**.
+
+* 	Enter the **Name “redshift-query”**.
+
+* 	Select **AWSGlueServiceRoleDefault** as **IAM role** and click **Next**.
+
+* 	Select **“usvideos_csv”** and click **Next**.
+
+![redshift7.png](/images/redshift7.png)
+
+* 	Choose **Create tables in your data target**.
+
+* 	Select **Data store** as **JDBC**.
+
+* 	Select **redshift-spectrum** for **Connection** and enter the **Database name “mydb”** then click **Next**.
+
+* 	Click **Next** you will find this screen below.
+
+![redshift8.png](/images/redshift8.png)
+
+* 	Click **finish**.
+
+* 	View the job. This screen provides a complete view of the job and allows you to edit, click **Save**, and choose **Run job**. This steps may be waiting around 10 minutes.
+
+In this job, Glue send data to Redshift cluster and processing data by the cluster.
+
+![redshift9.png](/images/redshift9.png)
+
+
 

@@ -50,21 +50,21 @@ Next, let's use Amazon Comprehend to create and manage asynchronous topic detect
 
 * 	When the job complete the status change to *Completed*.
 
-* 	After job completed, you will find a new output in  **yourname-topic-analysis-result** bucket
+* 	After job completed, you will find a new output in **yourname-topic-analysis-result** bucket in Amazon S3.
 
 * 	Click below folder:
 
 ![setup_comprehend4.png](/images/setup_comprehend4.png)
 
-You will find that a **output** folder inside 
+*   You will find that a **output** folder inside. 
 
 ![setup_comprehend5.png](/images/setup_comprehend5.png)
 
-Click **output** you will see a file **output.tar.gz**
+*   Click **output** you will see a file **output.tar.gz**.
 
 ![setup_comprehend6.png](/images/setup_comprehend6.png)
 
-Download the file you will get the topic modeling result as csv file
+*   Download the file you will get the topic modeling result as csv file.
 
 ![setup_comprehend7.png](/images/setup_comprehend7.png)
 

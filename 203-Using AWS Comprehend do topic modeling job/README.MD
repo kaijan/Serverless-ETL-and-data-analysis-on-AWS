@@ -1,5 +1,8 @@
 # Using AWS Comprehend do topic modeling job
 
+You use AWS Glue to set up and manage your extract, transform, and load (ETL) workload. 
+
+
 ### Setup your first topic detection jobs by Amazon Comprehend
 
 * 	On the **Services** menu, click **Amazon Comprehend**.

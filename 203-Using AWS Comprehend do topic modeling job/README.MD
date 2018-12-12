@@ -98,26 +98,27 @@ Next, let's use Amazon Comprehend to create and manage asynchronous topic detect
     *   data_access_role_arn = "arn:aws:iam::xxxxxxxxxxxx:role/service-role/AmazonComprehendServiceRoleS3FullAccess-user"
         (The arn of IAM role that you create in Amazon Comprehend console)
  
-         import boto3
-         import json
+ 
+            import boto3
+            import json
 
-         def lambda_handler(event, context):
-             # TODO implement
-             comprehend = boto3.client(service_name='comprehend', region_name='us-east-1')
-             input_s3_url = "s3://yourname-topic-analysis"
-             input_doc_format = "ONE_DOC_PER_LINE"
-             output_s3_url = "s3://yourname-topic-analysis-result"
-             data_access_role_arn = "arn:aws:iam::xxxxxxxxxxxx:role/service-role/AmazonComprehendServiceRoleS3FullAccess-user"
-             number_of_topics = 50
+               def lambda_handler(event, context):
+               # TODO implement
+               comprehend = boto3.client(service_name='comprehend', region_name='us-east-1')
+               input_s3_url = "s3://yourname-topic-analysis"
+               input_doc_format = "ONE_DOC_PER_LINE"
+               output_s3_url = "s3://yourname-topic-analysis-result"
+               data_access_role_arn = "arn:aws:iam::xxxxxxxxxxxx:role/service-role/AmazonComprehendServiceRoleS3FullAccess-user"
+               number_of_topics = 50
 
-             input_data_config = {"S3Uri": input_s3_url, "InputFormat": input_doc_format}
-             output_data_config = {"S3Uri": output_s3_url}
+               input_data_config = {"S3Uri": input_s3_url, "InputFormat": input_doc_format}
+               output_data_config = {"S3Uri": output_s3_url}
 
-             start_topics_detection_job_result = comprehend.start_topics_detection_job(NumberOfTopics=number_of_topics,
+               start_topics_detection_job_result = comprehend.start_topics_detection_job(NumberOfTopics=number_of_topics,
                                                                                        InputDataConfig=input_data_config,
                                                                                        OutputDataConfig=output_data_config,
                                                                                        DataAccessRoleArn=data_access_role_arn)
-             return start_topics_detection_job_result
+               return start_topics_detection_job_result
  
 
 * 	In **configuration**, click **S3** below **Add triggers** to add trigger for **comprehend-lambda** function

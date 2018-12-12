@@ -1,6 +1,8 @@
 # Using AWS Comprehend do topic modeling job
 
-You use AWS Glue to set up and manage your extract, transform, and load (ETL) workload. 
+You use AWS Glue to set up and manage your extract, transform, and load (ETL) workload. To set up crawlers that scan data in Amazon S3, classify it, extract schema information from it, and store the metadata automatically in the AWS Glue Data Catalog. Then trigger a Lambda function to automate ETL job.
+
+Next, let's use Amazon Comprehend to create and manage asynchronous topic detection jobs.
 
 
 ### Setup your first topic detection jobs by Amazon Comprehend

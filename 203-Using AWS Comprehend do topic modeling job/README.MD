@@ -38,9 +38,9 @@ Next, let's use Amazon Comprehend to create and manage asynchronous topic detect
 
 ![setup_comprehend1.png](/images/setup_comprehend1.png)
 
-* 	Click **Create job**.
+* 	Click **Create job** to create and start the topic detection job.
 
-* 	It will take a few time running
+* 	It will take a few time running.
 
 ![setup_comprehend2.png](/images/setup_comprehend2.png)
 
@@ -48,11 +48,11 @@ Next, let's use Amazon Comprehend to create and manage asynchronous topic detect
 
 ![setup_comprehend3.png](/images/setup_comprehend3.png)
 
-* 	When the job complete the status change to Complete.
+* 	When the job complete the status change to *Completed*.
 
 * 	After job completed, you will find a new output in  **yourname-topic-analysis-result** bucket
 
-* 	Click below folder
+* 	Click below folder:
 
 ![setup_comprehend4.png](/images/setup_comprehend4.png)
 

@@ -41,17 +41,15 @@ Amazon Athena is an interactive query service that makes it easy to analyze data
  ![athena3.png](/images/athena3.png)
  
  
-## Data analysis with Redshift
+## Data analysis with Redshift and connect to AWS Glue
 
 After finish analyzing data in Athena, get start with data analysis with Amazon Redshift. Different from Athena, it is recommended to use Amazon Redshift on large sets of structured data. It is scalable enough that even if new nodes are added to the cluster, it can be easily accommodated with few configuration changes.
 
 Amazon Redshift is a petabyte-scale data warehouse used together with business intelligence tools for modern analytical solutions. Unlike Athena, Redshift requires a **cluster** for which we need to upload the data extracts and build tables before we can query. 
 
-### Setting up Redshift
+### Setting up VPC for Redshift
 
-*	First setup VPC in which you want to create your cluster
-
-*	Launch Redshift cluster and connect to AWS Glue
+First setup VPC in which you want to create your cluster.
 
 * 	On the **Services** menu, click **VPC**.
 
@@ -79,6 +77,8 @@ Amazon Redshift is a petabyte-scale data warehouse used together with business i
 
 ![redshift2.png](/images/redshift2.png)
 
+### Setting up Redshift
+
 * 	On the **Services** menu, click **Amazon Redshift**.
 
 * 	In the navigation pane, choose **Security**.
@@ -89,7 +89,7 @@ Amazon Redshift is a petabyte-scale data warehouse used together with business i
 
 * 	Enter the **Description “SG for redshift”**.
 
-* 	Select the **VPC ID** (vpc-xxxxxxxx)same as **Redshift-VPC** that you create before.
+* 	Select the **VPC ID** (vpc-xxxxxxxx) same as **Redshift-VPC** that you create before.
 
 * 	Click **add all the subnets** then click **Create**.
 
@@ -117,13 +117,11 @@ Amazon Redshift is a petabyte-scale data warehouse used together with business i
 
 * 	After examine that all setting is correct, click **Launch cluster**.
 
-(**This instance will charged $0.25 hourly**)
-
-Detail pricing issues https://aws.amazon.com/tw/redshift/pricing/#
-
-    At launching time, cluster creation times averaged 15 minutes
+* It will need 10-15 minutes passed before the cluster was ready to use.
     
 ![redshift4.png](/images/redshift4.png)
+
+### Connect to AWS Glue
 
 * 	On the **Services** menu, click **AWS Glue**.
 

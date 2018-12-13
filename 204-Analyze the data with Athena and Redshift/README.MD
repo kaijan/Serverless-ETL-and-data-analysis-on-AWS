@@ -32,7 +32,7 @@ Amazon Athena is an interactive query service that makes it easy to analyze data
 
 * Query the data, type below standard SQL:
 
-**Note:** for example, *Select * From "my-data"."james_etl_result2";*
+    **Note:** for example, *Select * From "my-data"."james_etl_result2";*
 
          Select * From "my-data"."yourname_etl_result2";
 

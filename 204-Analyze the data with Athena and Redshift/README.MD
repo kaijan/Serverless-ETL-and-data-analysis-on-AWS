@@ -129,13 +129,13 @@ First setup VPC in which you want to create your cluster.
 
 * 	Click **Add connection**.
 
-* 	Enter **Connection name “redshift-spectrum”**.
+* 	Enter Connection name: **redshift-spectrum**.
 
-* 	Select **Connection type “Amazon Redshift”** and click **next**.
+* 	Select Connection type **Amazon Redshift** and click **next**.
 
 * 	Select **my-cluster** in **Cluster** blank.
 
-* 	Enter **Database name “mydb”**.
+* 	Enter Database name: **mydb**.
 
 * 	Enter your own **Username** and **Password** then click **Next**.
 

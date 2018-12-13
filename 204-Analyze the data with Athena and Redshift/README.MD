@@ -8,19 +8,19 @@ Next, we will use Athena to query the data in an easy way with data catalog of G
 
 Amazon Athena is an interactive query service that makes it easy to analyze data directly in Amazon S3 using standard SQL.
 
-* 	On the **Services** menu, click **Athena**.
+* On the **Services** menu, click **Athena**.
 
-*        Choose **Get Started** to open the Query Editor while your first time visiting the Athena console. If it isn't your first time, the Athena Query Editor opens.
+* Choose **Get Started** to open the Query Editor while your first time visiting the Athena console. If it isn't your first time, the Athena Query Editor opens.
 
-* 	On the **Query Editor** tab, choose the database **my-data**.
+* On the **Query Editor** tab, choose the database **my-data**.
 
 ![athena1.png](/images/athena1.png)
 
-* 	Choose the **yourname_etl_result** table.
+* Choose the **yourname_etl_result** table.
 
-* 	Query the data, type below standard SQL:
+* Query the data, type below standard SQL:
 
-**Note: for example, Select * From "my-data"."james_etl_result" limit 100;**
+    **Note: for example, Select * From "my-data"."james_etl_result" limit 100;**
 
          Select * From "my-data"."yourname_etl_result" limit 100;
         	
@@ -28,9 +28,9 @@ Amazon Athena is an interactive query service that makes it easy to analyze data
 
 ![athena2.png](/images/athena2.png)
 
-* 	Choose the **yourname_etl_result2** table.
+* Choose the **yourname_etl_result2** table.
 
-* 	Query the data, type below standard SQL:
+* Query the data, type below standard SQL:
 
          Select * From "my-data"."yourname_etl_result2";
          (e.g., Select * From "my-data"."james_etl_result2";)

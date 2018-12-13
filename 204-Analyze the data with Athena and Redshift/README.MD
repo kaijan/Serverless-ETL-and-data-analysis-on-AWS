@@ -123,27 +123,29 @@ First setup VPC in which you want to create your cluster.
 
 ### Connect to AWS Glue
 
-* 	On the **Services** menu, click **AWS Glue**.
+* On the **Services** menu, click **AWS Glue**.
 
-* 	In the navigation pane, choose **Connections**.
+* In the navigation pane, choose **Connections**.
 
-* 	Click **Add connection**.
+* Click **Add connection**.
 
-* 	Enter Connection name: **redshift-spectrum**.
+* Enter Connection name: **redshift-spectrum**.
 
-* 	Select Connection type **Amazon Redshift** and click **next**.
+* Select Connection type **Amazon Redshift**.
+
+* choose **Require SSL connection**, and click **next**.
 
 * 	Select **my-cluster** in **Cluster** blank.
 
-* 	Enter Database name: **mydb**.
+* Enter Database name: **mydb**.
 
-* 	Enter your own **Username** and **Password** then click **Next**.
+* Enter your own **Username** and **Password** then click **Next**.
 
-* 	Click **Finish**.
+* Click **Finish**.
 
-* 	Select **redshift-spectrum** and click **Test connection**.
+* Select **redshift-spectrum** and click **Test connection**.
 
-* 	Select **AWSGlueServiceRoleDefault** as **IAM role** and click **Test connection**. You will find below screen after testing.
+* Select **AWSGlueServiceRoleDefault** as **IAM role**, and click **Test connection**. You will find below screen after testing.
 
 ![redshift5.png](/images/redshift5.png)
 

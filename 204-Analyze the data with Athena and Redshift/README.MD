@@ -57,7 +57,7 @@ First setup VPC in which you want to create your cluster.
 
 * 	In this workshop we simply choose **VPC with a single Public Subnet**
 
-* 	Enter your VPC name **“Redshift-VPC”**.
+* 	Enter your VPC name: **Redshift-VPC**.
 
 * 	Click **Add Endpoint** below **Service endpoints** and select **com.amazonaws.us-east-1.s3** as service.
 
@@ -85,9 +85,9 @@ First setup VPC in which you want to create your cluster.
 
 * 	Select **Subnet Groups** and click **Create Cluster Subnet Group**.
 
-*	Enter the **Name “redshift-sg”**.
+*	Enter the Name: **redshift-sg**.
 
-* 	Enter the **Description “SG for redshift”**.
+* 	Enter the Description: **SG for redshift**.
 
 * 	Select the **VPC ID** (vpc-xxxxxxxx) same as **Redshift-VPC** that you create before.
 
@@ -99,9 +99,9 @@ First setup VPC in which you want to create your cluster.
 
 * 	Click **Launch cluster**
 
-* 	Enter **Cluster identifier “my-cluster”**
+* 	Enter Cluster identifier: **my-cluster**
 
-* 	Enter **Database name “mydb”**
+* 	Enter Database name: **mydb**
 
 * 	Leave **Database port** for **5439**
 
@@ -111,7 +111,7 @@ First setup VPC in which you want to create your cluster.
 
 * 	Click **Continue**.
 
-* 	Select VPC ID of **“Redshift-VPC”** in **Choose a VPC** blank.
+* 	Select VPC ID of **Redshift-VPC** in **Choose a VPC** blank.
 
 * 	In **Available roles** choose **SpectrumRole** then click **Continue**.
 

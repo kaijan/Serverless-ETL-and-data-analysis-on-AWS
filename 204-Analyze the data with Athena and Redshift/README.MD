@@ -1,8 +1,12 @@
 # Analyze the data with Athena and Redshift
 
-##
+You use Amazon Comprehend to examine and analyze a document to determine common themes.
 
-Athena can query the data in an easy way with data catalog of Glue
+Next, we will use Athena to query the data in an easy way with data catalog of Glue, and use Redshift to do data analysis that often processing structural data query job for long term workflow. Both of them can be used for data analysis, choose one suitable for your application.
+
+## Start sorting data by using Athena
+
+Athena can query the data in an easy way with data catalog of Glue.
 
 * 	On the **Services** menu, click **Athena**.
 

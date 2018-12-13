@@ -19,9 +19,10 @@ Athena can query the data in an easy way with data catalog of Glue.
 * 	Query the data, type below standard SQL:
 
          Select * From "my-data"."yourname_etl_result" limit 100;
-         (e.g., Select * From "my-data"."james_etl_result" limit 100;)
 
-* 	Click **Run Query** and Athena will query data as the below screen
+    *        (e.g., Select * From "my-data"."james_etl_result" limit 100;) 	
+
+*        Click **Run Query** and Athena will query data as the below screen
 
 ![athena2.png](/images/athena2.png)
 

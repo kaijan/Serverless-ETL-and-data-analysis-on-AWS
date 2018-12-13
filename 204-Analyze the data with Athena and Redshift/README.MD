@@ -6,7 +6,7 @@ Next, we will use Athena to query the data in an easy way with data catalog of G
 
 ## Start sorting data by using Athena
 
-Amazon Athena is an interactive query service that makes it easy to analyze data directly in Amazon S3 using standard SQL.
+Amazon Athena is an interactive query service that makes it easy to analyze data directly in Amazon S3 using standard SQL. It is a serverless service and does not need any infrastructure to create, manage, or scale data sets. It works directly on top of Amazon S3 data sets. It creates external tables and therefore does not manipulate S3 data sources, working as a read-only service from an S3 perspective. 
 
 * On the **Services** menu, click **Athena**.
 
@@ -43,7 +43,7 @@ Amazon Athena is an interactive query service that makes it easy to analyze data
  
 ## Data analysis with Redshift
 
-After finish analyzing data in Athena, get start with data analysis with Redshift Spectrum. Different from Athena, Redshift is suitable for long term workflow of data analysis that often processing structural data query job.
+After finish analyzing data in Athena, get start with data analysis with Amazon Redshift. Different from Athena, Redshift is suitable for long term workflow of data analysis that often processing structural data query job.
 
 *	First setup VPC in which you want to create your cluster
 

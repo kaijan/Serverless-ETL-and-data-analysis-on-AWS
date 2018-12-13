@@ -151,25 +151,25 @@ First setup VPC in which you want to create your cluster.
 
 ![redshift6.png](/images/redshift6.png)
 
-* 	On the **Services** menu, click **AWS Glue**.
+* On the **Services** menu, click **AWS Glue**.
 
-* 	In the navigation pane, choose **Jobs**.
+* In the navigation pane, choose **Jobs**.
 
-*.	Click **Add job**.
+* Click **Add job**.
 
-* 	Enter the **Name “redshift-query”**.
+* Enter the **Name “redshift-query”**.
 
-* 	Select **AWSGlueServiceRoleDefault** as **IAM role** and click **Next**.
+* Select **AWSGlueServiceRoleDefault** as **IAM role** and click **Next**.
 
-* 	Select **“usvideos_csv”** and click **Next**.
+* Select **“usvideos_csv”** and click **Next**.
 
 ![redshift7.png](/images/redshift7.png)
 
-* 	Choose **Create tables in your data target**.
+* Choose **Create tables in your data target**.
 
-* 	Select **Data store** as **JDBC**.
+* Select **Data store** as **JDBC**.
 
-* 	Select **redshift-spectrum** for **Connection** and enter the **Database name “mydb”** then click **Next**.
+* Select **redshift-spectrum** for **Connection** and enter the **Database name “mydb”** then click **Next**.
 
 * 	Click **Next** you will find this screen below.
 
@@ -183,5 +183,12 @@ In this job, Glue send data to Redshift cluster and processing data by the clust
 
 ![redshift9.png](/images/redshift9.png)
 
+## Congratulations! You now have learned how to:
 
+* Sorting data by using Athena.
 
+* Setting up Redshift.
+
+* Adding a Redshift to determine the underlying JDBC properties to create the connection.
+
+### Now you are ready to Visualize real time data with QuickSight

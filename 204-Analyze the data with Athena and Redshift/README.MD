@@ -179,7 +179,7 @@ First setup VPC in which you want to create your cluster.
 
 * 	View the job. This screen provides a complete view of the job and allows you to edit, click **Save**, and choose **Run job**. This steps may be waiting around 10 minutes.
 
-In this job, Glue send data to Redshift cluster and processing data by the cluster.
+    * In this job, Glue send data to Redshift cluster and processing data by the cluster.
 
 ![redshift9.png](/images/redshift9.png)
 

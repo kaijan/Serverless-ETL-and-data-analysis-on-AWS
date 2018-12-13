@@ -43,7 +43,11 @@ Amazon Athena is an interactive query service that makes it easy to analyze data
  
 ## Data analysis with Redshift
 
-After finish analyzing data in Athena, get start with data analysis with Amazon Redshift. Different from Athena, Redshift is suitable for long term workflow of data analysis that often processing structural data query job.
+After finish analyzing data in Athena, get start with data analysis with Amazon Redshift. Different from Athena, it is recommended to use Amazon Redshift on large sets of structured data. It is scalable enough that even if new nodes are added to the cluster, it can be easily accommodated with few configuration changes.
+
+Amazon Redshift is a petabyte-scale data warehouse used together with business intelligence tools for modern analytical solutions. Unlike Athena, Redshift requires a **cluster** for which we need to upload the data extracts and build tables before we can query. 
+
+### Setting up Redshift
 
 *	First setup VPC in which you want to create your cluster
 

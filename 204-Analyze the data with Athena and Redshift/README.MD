@@ -10,6 +10,8 @@ Amazon Athena is an interactive query service that makes it easy to analyze data
 
 * 	On the **Services** menu, click **Athena**.
 
+*        Choose **Get Started** to open the Query Editor while your first time visiting the Athena console. If it isn't your first time, the Athena Query Editor opens.
+
 * 	On the **Query Editor** tab, choose the database **my-data**.
 
 ![athena1.png](/images/athena1.png)
@@ -18,11 +20,11 @@ Amazon Athena is an interactive query service that makes it easy to analyze data
 
 * 	Query the data, type below standard SQL:
 
+**Note: for example, Select * From "my-data"."james_etl_result" limit 100;**
+
          Select * From "my-data"."yourname_etl_result" limit 100;
-         (e.g., Select * From "my-data"."james_etl_result" limit 100;)  	
-
-
-* Click **Run Query** and Athena will query data as the below screen:
+        	
+* Click **Run Query** and results are returned that look like the following:
 
 ![athena2.png](/images/athena2.png)
 
@@ -33,13 +35,14 @@ Amazon Athena is an interactive query service that makes it easy to analyze data
          Select * From "my-data"."yourname_etl_result2";
          (e.g., Select * From "my-data"."james_etl_result2";)
 
-* Click **Run Query** and Athena will query data as the below screen
+* Click **Run Query** and results are returned that look like the following:
 
  ![athena3.png](/images/athena3.png)
  
  
- 
-After finish analyzing data in Athena, get start with data analysis with **Redshift Spectrum**. **Different from Athena, Redshift is suitable for long term workflow of data analysis that often processing structural data query job**.
+## Data analysis with Redshift
+
+After finish analyzing data in Athena, get start with data analysis with Redshift Spectrum. Different from Athena, Redshift is suitable for long term workflow of data analysis that often processing structural data query job.
 
 *	First setup VPC in which you want to create your cluster
 

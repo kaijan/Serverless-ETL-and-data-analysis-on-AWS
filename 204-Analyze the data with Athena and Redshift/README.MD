@@ -21,7 +21,8 @@ Amazon Athena is an interactive query service that makes it easy to analyze data
          Select * From "my-data"."yourname_etl_result" limit 100;
          (e.g., Select * From "my-data"."james_etl_result" limit 100;)  	
 
-*        Click **Run Query** and Athena will query data as the below screen:
+
+* Click **Run Query** and Athena will query data as the below screen:
 
 ![athena2.png](/images/athena2.png)
 

@@ -6,7 +6,7 @@ Next, we will use Athena to query the data in an easy way with data catalog of G
 
 ## Start sorting data by using Athena
 
-Athena can query the data in an easy way with data catalog of Glue.
+Amazon Athena is an interactive query service that makes it easy to analyze data directly in Amazon S3 using standard SQL.
 
 * 	On the **Services** menu, click **Athena**.
 
@@ -21,7 +21,7 @@ Athena can query the data in an easy way with data catalog of Glue.
          Select * From "my-data"."yourname_etl_result" limit 100;
          (e.g., Select * From "my-data"."james_etl_result" limit 100;)  	
 
-*        Click **Run Query** and Athena will query data as the below screen
+*        Click **Run Query** and Athena will query data as the below screen:
 
 ![athena2.png](/images/athena2.png)
 
@@ -32,9 +32,11 @@ Athena can query the data in an easy way with data catalog of Glue.
          Select * From "my-data"."yourname_etl_result2";
          (e.g., Select * From "my-data"."james_etl_result2";)
 
-Click **Run Query** and Athena will query data as the below screen
+*        Click **Run Query** and Athena will query data as the below screen
 
  ![athena3.png](/images/athena3.png)
+ 
+ 
  
 After finish analyzing data in Athena, get start with data analysis with **Redshift Spectrum**. **Different from Athena, Redshift is suitable for long term workflow of data analysis that often processing structural data query job**.
 

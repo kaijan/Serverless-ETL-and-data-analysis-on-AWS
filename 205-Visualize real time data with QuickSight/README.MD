@@ -218,15 +218,13 @@ You will learn how to use Amazon QuickSight (AWS BI service) to visualize the da
 
 ![qs40.png](/images/qs40.png)
 
-*	Click Finish then Click on **Save & visualize**
+*	Click Finish then Click on **Save & visualize**.
 
-* 	Then you can create several plots of **President title video**
+* 	Then you can create several plots of **President title video**. For example, Pie Chart in this case.
 
 ![qs41.png](/images/qs41.png)
 
-Pie Chart example
 
-Congratulations! You now have finished whole Lab and have learned how to do **Serverless ETL with AWS Glue & BI process with QuickSight**.
 
 ## Congratulations! You now have learned how to:
 
@@ -234,8 +232,11 @@ Congratulations! You now have finished whole Lab and have learned how to do **Se
 
 * Visualize data on QuickSight with Redshift.
 
-## Appendix
+* You now have finished whole Lab and have learned how to do **Serverless ETL with AWS Glue & BI process with QuickSight**.
 
+
+
+## Appendix
 
 ### Visualize data with Tableau
 

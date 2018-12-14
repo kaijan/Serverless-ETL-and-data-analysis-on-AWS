@@ -22,6 +22,8 @@ You will learn how to use Amazon QuickSight (AWS BI service) to visualize the da
  
 * Provide requested information and setting then click on **Finish**.
 
+    * Type in a your **email** address to receive Amazon QuickSight service and usage notifications.
+
 ![qs3.png](/images/qs3.png)
 
 * It takes a while to enable your account.

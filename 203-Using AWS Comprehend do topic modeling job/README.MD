@@ -104,7 +104,7 @@ Amazon Comprehend uses a pre-trained model to examine and analyze a document or 
             import boto3
             import json
 
-               def lambda_handler(event, context):
+            def lambda_handler(event, context):
                # TODO implement
                comprehend = boto3.client(service_name='comprehend', region_name='us-east-1')
                input_s3_url = "s3://yourname-topic-analysis"

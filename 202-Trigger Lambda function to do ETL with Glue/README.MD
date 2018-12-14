@@ -64,7 +64,7 @@ Now you finish the crawler setting, and going to create a job to transform data 
 
 * 	Choose **Create tables in your data target**.
 
-*	For Data store, choose Amazon S3, and choose **Parquet** as the format.
+*	For Data store, choose **Amazon S3**, and choose **Parquet** as the format.
 
 *	For **Target path**, select S3 bucket with **“yourname-etl-result”** that you created before to store the results.
 

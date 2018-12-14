@@ -6,11 +6,11 @@ You will learn how to use Amazon QuickSight (AWS BI service) to visualize the da
 
 ## Data visualization with QuickSight
 
-### Data visualization with QuickSight
+### Setting Up Amazon QuickSight
 
 * First you need to register QuickSight.
 
-    * Please confirm the user have Administrator permission to sign up QuickSight.**
+    * Please confirm the user have Administrator permission to sign up QuickSight.
 
 * Click **Sign up for QuickSight**.
 

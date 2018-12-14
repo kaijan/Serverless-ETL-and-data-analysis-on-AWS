@@ -241,7 +241,7 @@ Next step you will learn how to trigger ETL job with Lambda function automatical
 
 * 	Click **Save** to save the change of function.
 
-* 	Now you can upload a csv file into **yourname-dataset** bucket to test that whether this Lambda function operating normally.
+* 	Now you can upload **USvideos.csv** file into **yourname-dataset** bucket again to test that whether this Lambda function operating normally.
 
 * 	After you upload a csv file into **yourname-dataset** bucket, AWS Glue will run the job **“data-csv-parquet”**. The **History** console will show the job is running if your Lambda function is correct.
 

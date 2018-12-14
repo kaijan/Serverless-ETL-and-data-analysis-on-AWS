@@ -120,35 +120,36 @@ You will learn how to use Amazon QuickSight (AWS BI service) to visualize the da
 
 * 	Click **Finish** then Click on **Save & visualize**.
 
-* 	Then you can start customize your chart to do your BI strategy.
+* 	Then you can start customize your chart to do your BI strategy. This plot shows the factors that impact Entertainment video type in this query case.
 
 ![qs25.png](/images/qs25.png)
 
-This plot shows the factors that impact Entertainment video type
 
-Congratulations! You now have learned how to visualize data on Quicksight with Athena. **Next step we will visualize data on QuickSight with Redshift**.
+### Create an Analysis with Redshift
  
 * 	Back to QuickSight home page and click **New analysis**.
 
-* 	Click **New data set** and select **Redshift (Manual connect)**
+* 	Click **New data set** and select **Redshift (Manual connect)**.
 
 ![qs26.png](/images/qs26.png)
 
 * 	Enter Data source name **RedshiftBI**
 
-* 	Enter **Database server** as your redshift cluster **Endpoint**
-(e.g.,  my-cluster.ceng4yniaba2.us-east-1.redshift.amazonaws.com)
+* 	Enter **Database server** as your redshift cluster **Endpoint**.
+
+    * e.g., my-cluster.ceng4yniaba2.us-east-1.redshift.amazonaws.com
 
 ![qs27.png](/images/qs27.png)
 
-* 	Enter Port **5439**
+* 	Enter Port **5439**.
 
-* 	Enter **Database name “mydb”**
+* 	Enter **Database name: mydb**
 
-* 	Enter your **Username** and **Password** of redshift cluster that you create before<br><br>
-* 	Click **Validate connection**
+* 	Enter your **Username** and **Password** of redshift cluster that you create before.
 
-* 	Click **Create data source**
+* 	Click **Validate connection**.
+
+* 	Click **Create data source**.
 
 ![qs28.png](/images/qs28.png)
 
@@ -166,14 +167,13 @@ Congratulations! You now have learned how to visualize data on Quicksight with A
 
 ![qs32.png](/images/qs32.png)
 
+* Now we import the result of topic modeling data (**topic-terms.csv**) to integrate with QuickSight.
 
-Now we import the result of topic modeling data (**topic-terms.csv**) to integrate with QuickSight
+* 	Back to **QuickSight** console.
 
-* 	Back to **QuickSight** console
+* 	Click **New analysis**.
 
-* 	Click **New analysis**
-
-* 	Click **New data set**
+* 	Click **New data set**.
 
 * 	Click **Upload a file**
 
@@ -232,7 +232,11 @@ Pie Chart example
 
 Congratulations! You now have finished whole Lab and have learned how to do **Serverless ETL with AWS Glue & BI process with QuickSight**.
 
+## Congratulations! You now have learned how to:
 
+* Visualize data on Quicksight with Athena. 
+
+* Visualize data on QuickSight with Redshift.
 
 ## Appendix
 

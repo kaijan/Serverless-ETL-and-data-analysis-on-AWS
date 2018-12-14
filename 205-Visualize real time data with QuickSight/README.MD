@@ -143,7 +143,7 @@ You will learn how to use Amazon QuickSight (AWS BI service) to visualize the da
 
 * 	Enter Port **5439**.
 
-* 	Enter **Database name: mydb**
+* 	Enter **Database name: mydb**.
 
 * 	Enter your **Username** and **Password** of redshift cluster that you create before.
 
@@ -175,13 +175,13 @@ You will learn how to use Amazon QuickSight (AWS BI service) to visualize the da
 
 * 	Click **New data set**.
 
-* 	Click **Upload a file**
+* 	Click **Upload a file**.
 
 ![qs33.png](/images/qs33.png)
 
-* 	Select **topic-terms.csv** and upload
+* 	Select **topic-terms.csv** and upload.
 
-* 	Click **Next**
+* 	Click **Next**.
 
 ![qs34.png](/images/qs34.png)
 
@@ -191,31 +191,27 @@ You will learn how to use Amazon QuickSight (AWS BI service) to visualize the da
 
 * 	Select a **Visual types** then drag the field items which below **Fields list** into **Field wells** and you can create different BI charts.
 
-* 	For example, **horizontal stacked bar chart** shows that sum of weight by term.
-
-We can know that the word **“president”** is often appears in US videos.
+* 	For example, **horizontal stacked bar chart** shows that sum of weight by term. We can know that the word **president** is often appears in US videos.
 
 ![qs36.png](/images/qs36.png)
 
-You can query certain trending topic of **title** to do several analytics
+* You can query certain trending topic of **title** to do several analytics. For example, video relate to **President**.
 
-(For example, video relate to **President**)
-
-* 	Back to your QuickSight data sets page click **New data set**
+* 	Back to your QuickSight data sets page click **New data set**.
 
 ![qs37.png](/images/qs37.png)
 
-* 	Choose **Athena** and enter data source name **“President”** 
+* 	Choose **Athena** and enter data source name **President**. 
 
 * 	Select **yourname_etl_result** in **my-data** database and click **Edit / Preview data**
 
 ![qs38.png](/images/qs38.png)
 
-* 	In the navigation pane under **Tables**, select **Use SQL**
+* 	In the navigation pane under **Tables**, select **Use SQL**.
 
 ![qs39.png](/images/qs39.png)
 
-* 	Enter SQL name **“President”** and paste below code in Custom SQL field
+* 	Enter SQL name **President** and paste below code in Custom SQL field.
 
          Select * From "my-data"."james_etl_result" where title like '%President%'; 
          (for the title that contain “President”)

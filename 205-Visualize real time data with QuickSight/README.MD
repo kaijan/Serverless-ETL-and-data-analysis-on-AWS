@@ -1,11 +1,10 @@
 # Visualize real time data with QuickSight
 
 Now we have finished data analysis with Athena and Redshift.
-You will learn how to use QuickSight (AWS BI service) to visualize the data.
+
+You will learn how to use Amazon QuickSight (AWS BI service) to visualize the data. Amazon QuickSight is a business analytics service you can use to build visualizations, perform ad hoc analysis, and get business insights from your data. It can automatically discover AWS data sources and also works with your data sources. 
 
 ## Data visualization with QuickSight
-
-Amazon QuickSight is a business analytics service you can use to build visualizations, perform ad hoc analysis, and get business insights from your data. It can automatically discover AWS data sources and also works with your data sources. 
 
 ### Data visualization with QuickSight
 
@@ -13,7 +12,7 @@ Amazon QuickSight is a business analytics service you can use to build visualiza
 
     * Please confirm the user have Administrator permission to sign up QuickSight.**
 
-* Click **“Sign up for QuickSight”**
+* Click **Sign up for QuickSight**.
 
 ![qs1.png](/images/qs1.png)
 
@@ -21,7 +20,7 @@ Amazon QuickSight is a business analytics service you can use to build visualiza
 
 ![qs2.png](/images/qs2.png)
  
-* Provide requested information and setting then click on [Finish]
+* Provide requested information and setting then click on **Finish**.
 
 ![qs3.png](/images/qs3.png)
 
@@ -29,7 +28,7 @@ Amazon QuickSight is a business analytics service you can use to build visualiza
 
 ![qs4.png](/images/qs4.png)
 
-* Finish register you will find the screen below
+* Finish register you will find the screen below:
 
 ![qs5.png](/images/qs5.png)
 
@@ -37,9 +36,7 @@ Amazon QuickSight is a business analytics service you can use to build visualiza
 
 ![qs7.png](/images/qs7.png)
 
-If you are new to QuickSight, the analyses board will be empty
-
-•	Now we can get start with **QuickSight**
+* If you are new to QuickSight, the analyses board will be empty, now we can get start with **QuickSight**.
 
 * 	Click **Manage data** and you will see this screen. If you were first time log in QuickSight console, there is no data sets record.
 

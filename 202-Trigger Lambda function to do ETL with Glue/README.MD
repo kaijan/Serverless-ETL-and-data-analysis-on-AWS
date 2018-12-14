@@ -210,9 +210,9 @@ Next step you will learn how to trigger ETL job with Lambda function automatical
       import boto3
       import json
 
-       glue = boto3.client('glue')
+      glue = boto3.client('glue')
 
-       def lambda_handler(event, context):
+      def lambda_handler(event, context):
            # TODO implement
            response = glue.start_job_run(
                JobName = 'data-csv-parquet',

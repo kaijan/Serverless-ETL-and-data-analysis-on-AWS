@@ -113,7 +113,8 @@ You will learn how to use Amazon QuickSight (AWS BI service) to visualize the da
 * 	Enter SQL name **Entertainment** and paste below code in Custom SQL field.
 
          Select * From "my-data"."yourname_etl_result" where category_id = 24;
-         (category_id =24 for Entertainment category)
+
+    *  category_id =24 for Entertainment category.
 
 ![qs24.png](/images/qs24.png)
 

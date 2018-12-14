@@ -1,14 +1,17 @@
 # Visualize real time data with QuickSight
 
+Now we have finished data analysis with Athena and Redshift.
+You will learn how to use QuickSight (AWS BI service) to visualize the data.
+
+## Data visualization with QuickSight
+
+Amazon QuickSight is a business analytics service you can use to build visualizations, perform ad hoc analysis, and get business insights from your data. It can automatically discover AWS data sources and also works with your data sources. 
+
 ### Data visualization with QuickSight
 
-Now we have finished data analysis with Athena and Redshift Spectrum
+* First you need to register QuickSight.
 
-You will learn how to use QuickSight (AWS BI service) to visualize the data
-
-* First you need to register QuickSight
-
-**Please confirm the user have Administrator permission to sign up QuickSight.**
+    * Please confirm the user have Administrator permission to sign up QuickSight.**
 
 * Click **“Sign up for QuickSight”**
 

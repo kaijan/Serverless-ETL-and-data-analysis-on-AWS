@@ -211,8 +211,8 @@ Next step you will learn how to trigger ETL job with Lambda function automatical
 
 * 	Click **ETL-auto** blank in **Designer** and replace original code that existing in **Function code** editor with below code
  
-         import boto3
-         import json
+        import boto3
+        import json
 
          glue = boto3.client('glue')
 

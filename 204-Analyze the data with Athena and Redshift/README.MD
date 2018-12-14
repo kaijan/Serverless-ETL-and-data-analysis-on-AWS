@@ -191,4 +191,4 @@ First setup VPC in which you want to create your cluster.
 
 * Adding a Redshift to determine the underlying JDBC properties to create the connection.
 
-### Now you are ready to Visualize real time data with QuickSight
+### Now you are ready to [Visualize real time data with QuickSight](https://github.com/ecloudvalley/Serverless-ETL-and-data-analysis-on-AWS/tree/master/205-Visualize%20real%20time%20data%20with%20QuickSight)

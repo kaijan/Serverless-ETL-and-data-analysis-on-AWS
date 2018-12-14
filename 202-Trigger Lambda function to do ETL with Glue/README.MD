@@ -206,21 +206,20 @@ Next step you will learn how to trigger ETL job with Lambda function automatical
 * Scroll down to the **Function code** section, then delete all of the code that appears in the code editor.
 
 * Copy below code, and paste it into the code editor:
- 
+
        import boto3
        import json
 
-         glue = boto3.client('glue')
+       glue = boto3.client('glue')
 
-         def lambda_handler(event, context):
-             # TODO implement
-             response = glue.start_job_run(
-                 JobName = 'data-csv-parquet',
-                 Arguments = {})
-             return response
-
-
-![lambda_glue4.png](/images/lambda_glue4.png) 
+       def lambda_handler(event, context):
+           # TODO implement
+           response = glue.start_job_run(
+               JobName = 'data-csv-parquet',
+               Arguments = {})
+           return response
+ 
+  ![lambda_glue4.png](/images/lambda_glue4.png) 
 
 * 	In **configuration**, click **S3** below **Add triggers** to add trigger for **ETL-auto** function and drop down to **Configure triggers** part, select bucket **“yourname-dataset”** as Bucket, select **PUT** as **Event type**. Remember to check **Enable trigger** box then you click **Add**.
 

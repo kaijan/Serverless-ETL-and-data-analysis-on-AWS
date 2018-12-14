@@ -16,7 +16,7 @@ You will learn how to use Amazon QuickSight (AWS BI service) to visualize the da
 
 ![qs1.png](/images/qs1.png)
 
-* Select the subscription type, choose **Standard**.
+* Select the subscription type, choose **Standard**. To confirm, choose **Continue**. 
 
 ![qs2.png](/images/qs2.png)
  

@@ -221,13 +221,23 @@ Next step you will learn how to trigger ETL job with Lambda function automatical
  
   ![lambda_glue4.png](/images/lambda_glue4.png) 
 
-* 	In **configuration**, click **S3** below **Add triggers** to add trigger for **ETL-auto** function and drop down to **Configure triggers** part, select bucket **“yourname-dataset”** as Bucket, select **PUT** as **Event type**. Remember to check **Enable trigger** box then you click **Add**.
+* Scroll to **Add triggers** at top of the page.
+
+* Under **Add triggers**, click **S3**.
+
+* Scroll down to **Configure triggers** and use these settings:
+
+    * Select bucket **“yourname-dataset”** as Bucket.
+    
+    * Select **PUT** as **Event type**.
+    
+    * Remember to check **Enable trigger** box.
+
+* Click **Add**.
 
 ![lambda_glue2.png](/images/lambda_glue2.png)
 
 ![lambda_glue3.png](/images/lambda_glue3.png)
-
-
 
 * 	Click **Save** to save the change of function.
 

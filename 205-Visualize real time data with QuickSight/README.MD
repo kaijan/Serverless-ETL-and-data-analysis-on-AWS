@@ -40,30 +40,33 @@ You will learn how to use Amazon QuickSight (AWS BI service) to visualize the da
 
 * If you are new to QuickSight, the analyses board will be empty, now we can get start with **QuickSight**.
 
+### Create an Analysis with Athena
+
 * 	Click **Manage data** and you will see this screen. If you were first time log in QuickSight console, there is no data sets record.
 
 ![qs8.png](/images/qs8.png)
 
-* 	Click **New data set** and you will find that many data sources
+* 	Click **New data set** and you will find that many data sources.
 
 ![qs9.png](/images/qs9.png)
 
-* 	Click on **Athena** and enter **“AthenaBI”** in **Data source name**, then click **Validate connection**<br><br>
+* 	Click on **Athena** and enter **AthenaBI** in **Data source name**, then click **Validate connection**.
+
 ![qs10.png](/images/qs10.png)
 
-* 	Click **Create data source** and select **“my-data”** database. For tables, choose **yourname_etl_result** and click **Select**.
+* 	Click **Create data source** and select **my-data** database. For tables, choose **yourname_etl_result** and click **Select**.
 
 ![qs11.png](/images/qs11.png)
 
 ![qs12.png](/images/qs12.png)
 
-* 	When loading finish click **Visualize**
+* 	When loading finish click **Visualize**.
 
 ![qs13.png](/images/qs13.png)
 
 ![qs14.png](/images/qs14.png)
 
-* 	Select a **Visual types (e.g., Vertical bar chart)**
+* 	Select a **Visual types** (e.g., Vertical bar chart).
 
 ![qs15.png](/images/qs15.png)
 
@@ -75,48 +78,48 @@ You will learn how to use Amazon QuickSight (AWS BI service) to visualize the da
 
 ![qs18.png](/images/qs18.png)
 
-This chart analyze that whether views and comment impact on likes. The video **“Falcon Heavy Test Flight”** is one of the example that really affected.
+* This chart analyze that whether views and comment impact on likes. The video **“Falcon Heavy Test Flight”** is one of the example that really affected.
 
-* 	You can analyze the channel type of the video by **yourname_etl_result2 bucket** using Athena (e.g., Entertainment)
+* 	You can analyze the channel type of the video by **yourname_etl_result2 bucket** using Athena (e.g., Entertainment).
 
-*	Create a **New data set** and choose Athena as data sources
+*	Create a **New data set** and choose **Athena** as data sources.
 
-* 	Select database **“my-data”** and select the table **“yourname_etl_result2"**
+* 	Select database **my-data** and select the table **yourname_etl_result2**.
 
 ![qs19.png](/images/qs19.png)
 
-*	Click **Select** and **Visualize**
+*	Click **Select** and **Visualize**.
 
-* 	Select table chart to display the title and id of category
+* 	Select table chart to display the title and id of category.
 
 ![qs20.png](/images/qs20.png)
 
-You can query certain **category id** to do several analytics
+* You can query certain **category id** to do several analytics.
 
-* 	Back to your QuickSight data sets page click **New data set**
+* 	Back to your QuickSight data sets page click **New data set**.
 
 ![qs21.png](/images/qs21.png)
 
-* 	Choose **Athena** and enter data source name **“Entertainment”** 
+* 	Choose **Athena** and enter data source name **Entertainment**. 
 
 * 	Select **yourname_etl_result** in **my-data** database and click **Edit / Preview data**
 
 ![qs22.png](/images/qs22.png)
 
-* 	In the navigation pane under **Tables**, select **Use SQL**
+* 	In the navigation pane under **Tables**, select **Use SQL**.
 
 ![qs23.png](/images/qs23.png)
 
-* 	Enter SQL name **“Entertainment”** and paste below code in Custom SQL field
+* 	Enter SQL name **Entertainment** and paste below code in Custom SQL field.
 
          Select * From "my-data"."yourname_etl_result" where category_id = 24;
          (category_id =24 for Entertainment category)
 
 ![qs24.png](/images/qs24.png)
 
-* 	Click **Finish** then Click on **Save & visualize**
+* 	Click **Finish** then Click on **Save & visualize**.
 
-* 	Then you can start customize your chart to do your BI strategy
+* 	Then you can start customize your chart to do your BI strategy.
 
 ![qs25.png](/images/qs25.png)
 

@@ -97,15 +97,15 @@ First setup VPC in which you want to create your cluster.
 
 * In the navigation pane, choose **Clusters**.
 
-* Click **Launch cluster**
+* Click **Launch cluster**.
 
-* Enter Cluster identifier: **my-cluster**
+* Enter Cluster identifier: **my-cluster**.
 
-* Enter Database name: **mydb**
+* Enter Database name: **mydb**.
 
-* Leave **Database port** for **5439**
+* Leave **Database port** for **5439**.
 
-* Enter your own **Master user name** and **Master user password** and type again your password in **Confirm password** then click **Continue**. (e.g., Master user name: james, Master user password: James123)
+* Enter your own **Master user name** and **Master user password** and type again your password in **Confirm password** then click **Continue**. (e.g., Master user name: james, Master user password: James123), click **Continute**.
 
 * Select **dc2.large** for the **Node type** which is the cheapest cluster.
 

@@ -167,13 +167,13 @@ First setup VPC in which you want to create your cluster.
 
 * Select **Data store** as **JDBC**.
 
-* Select **redshift-spectrum** for **Connection** and enter the **Database name “mydb”** then click **Next**.
+* Select **redshift-connection** for **Connection** and enter the **Database name “mydb”** then click **Next**.
 
 * 	Click **Next** you will find this screen below.
 
 ![redshift8.png](/images/redshift8.png)
 
-* 	Click **finish**.
+* 	Click **Save job and edit script**.
 
 * 	View the job. This screen provides a complete view of the job and allows you to edit, click **Save**, and choose **Run job**. This steps may be waiting around 10 minutes.
 

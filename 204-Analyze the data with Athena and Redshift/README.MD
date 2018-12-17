@@ -51,71 +51,71 @@ Amazon Redshift is a petabyte-scale data warehouse used together with business i
 
 First setup VPC in which you want to create your cluster.
 
-* 	On the **Services** menu, click **VPC**.
+* On the **Services** menu, click **VPC**.
 
-* 	Click **Start VPC Wizard**.
+* Click **Launch VPC Wizard**.
 
-* 	In this workshop we simply choose **VPC with a single Public Subnet**
+* In this workshop we simply choose **VPC with a single Public Subnet**, click **Select**.
 
-* 	Enter your VPC name: **Redshift-VPC**.
+* Enter your VPC name: **Redshift-VPC**.
 
-* 	Click **Add Endpoint** below **Service endpoints** and select **com.amazonaws.us-east-1.s3** as service.
+* Click **Add Endpoint** below **Service endpoints** and select **com.amazonaws.us-east-1.s3** as service.
 
 ![redshift1.png](/images/redshift1.png)
 
-* 	Click **Create VPC**.
+* Click **Create VPC**.
 
-* 	In the navigation pane, choose **Security Groups**.
+* In the navigation pane, choose **Security Groups**.
 
-* 	Select the Security Group that attach on **“Redshift-VPC”** which group name is **default** then select **Inbound Rules**.
+* Select the Security Group that attach on **“Redshift-VPC”** which group name is **default** then select **Inbound Rules**.
 
-* 	Click **Edit**.
+* Click **Edit**.
 
-*	Click **Add another rule** below, **Type** for **ALL Traffic**, Source for **0.0.0.0/0**.
+*Click **Add another rule** below, **Type** for **ALL Traffic**, Source for **0.0.0.0/0**.
 
-* 	Click **Save**.
+* Click **Save**.
 
 ![redshift2.png](/images/redshift2.png)
 
 ### Setting up Redshift
 
-* 	On the **Services** menu, click **Amazon Redshift**.
+* On the **Services** menu, click **Amazon Redshift**.
 
-* 	In the navigation pane, choose **Security**.
+* In the navigation pane, choose **Security**.
 
-* 	Select **Subnet Groups** and click **Create Cluster Subnet Group**.
+* Select **Subnet Groups** and click **Create Cluster Subnet Group**.
 
-*	Enter the Name: **redshift-sg**.
+* Enter the Name: **redshift-sg**.
 
-* 	Enter the Description: **SG for redshift**.
+* Enter the Description: **SG for redshift**.
 
-* 	Select the **VPC ID** (vpc-xxxxxxxx) same as **Redshift-VPC** that you create before.
+* Select the **VPC ID** (vpc-xxxxxxxx) same as **Redshift-VPC** that you create before.
 
-* 	Click **add all the subnets** then click **Create**.
+* Click **add all the subnets** then click **Create**.
 
 ![redshift3.png](/images/redshift3.png)
 
-* 	In the navigation pane, choose **Clusters**.
+* In the navigation pane, choose **Clusters**.
 
-* 	Click **Launch cluster**
+* Click **Launch cluster**
 
-* 	Enter Cluster identifier: **my-cluster**
+* Enter Cluster identifier: **my-cluster**
 
-* 	Enter Database name: **mydb**
+* Enter Database name: **mydb**
 
-* 	Leave **Database port** for **5439**
+* Leave **Database port** for **5439**
 
-* 	Enter your own **Master user name** and **Master user password** and type again your password in **Confirm password** then click **Continue**. (e.g., Master user name: james, Master user password: James123)
->
-* 	Select **dc2.large** for the **Node type** which is the cheapest cluster.
+* Enter your own **Master user name** and **Master user password** and type again your password in **Confirm password** then click **Continue**. (e.g., Master user name: james, Master user password: James123)
 
-* 	Click **Continue**.
+* Select **dc2.large** for the **Node type** which is the cheapest cluster.
 
-* 	Select VPC ID of **Redshift-VPC** in **Choose a VPC** blank.
+* Click **Continue**.
 
-* 	In **Available roles** choose **SpectrumRole** then click **Continue**.
+* Select VPC ID of **Redshift-VPC** in **Choose a VPC** blank.
 
-* 	After examine that all setting is correct, click **Launch cluster**.
+* In **Available roles** choose **SpectrumRole** then click **Continue**.
+
+* After examine that all setting is correct, click **Launch cluster**.
 
 * It will need 10-15 minutes passed before the cluster was ready to use.
     

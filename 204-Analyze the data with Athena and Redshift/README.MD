@@ -67,7 +67,7 @@ First setup VPC in which you want to create your cluster.
 
 * In the navigation pane, choose **Security Groups**.
 
-* Select the Security Group that attach on **“Redshift-VPC”** which group name is **default** then select **Inbound Rules**.
+* Select the Security Group that attach on **Redshift-VPC** which group name is **default** then select **Inbound Rules**.
 
 * Click **Edit**.
 

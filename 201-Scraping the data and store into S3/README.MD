@@ -14,7 +14,7 @@ In this tutorial, we will create IAM roles for multiple AWS services, whcih is a
 
 * For role type, choose **AWS Service**, find and choose **Glue**, and choose **Next: Permissions**.
 
-* On the **Attach permissions policy** page, search and choose **AmazonS3FullAccess, AWSGlueConsoleFullAccess**, and choose **Next: Review**.
+* On the **Attach permissions policy** page, search and choose **AmazonS3FullAccess, AWSGlueConsoleFullAccess**, **AmazonEC2FullAccess**, Click **Next: Tags**, and **Next: Review**.
 
 * On the **Review** page, enter the following detail:
 **Role name: AWSGlueServiceRoleDefault**
@@ -48,6 +48,31 @@ In this tutorial, we will create IAM roles for multiple AWS services, whcih is a
 * Click **Review policy**.
 
 * On the Review policy, enter policy name: **AWSCloudWatchLogs**.
+
+* Click **Create policy**.
+
+* Click the link **add inline policy** to create an inline policy.
+
+* On the JSON tab, paste in the following policy:
+
+         {
+             "Version": "2012-10-17",
+             "Statement": [
+                 {
+                     "Sid": "VisualEditor0",
+                     "Effect": "Allow",
+                     "Action": [
+                         "ec2:DeleteTags",
+                         "ec2:CreateTags"
+                     ],
+                     "Resource": "*"
+                 }
+             ]
+         }
+
+* Click **Review policy**.
+
+* On the Review policy, enter policy name: **CreateTags**.
 
 * Click **Create policy**.
 

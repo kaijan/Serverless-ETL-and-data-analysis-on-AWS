@@ -4,6 +4,12 @@ You use AWS Glue to set up and manage your extract, transform, and load (ETL) wo
 
 Next, let's use Amazon Comprehend to create and manage asynchronous topic detection jobs.
 
+
+## Prerequisites
+
+* Make sure the region is **US East (N. Virginia)**, which its short name is **us-east-1**.
+
+
 ## Setup topic detection jobs by Amazon Comprehend
 
 Amazon Comprehend uses a pre-trained model to examine and analyze a document or set of documents to gather insights about it. This model is continuously trained on a large body of text so that there is no need for you to provide training data. Topic modeling can search the content of documents to determine common themes and topics.

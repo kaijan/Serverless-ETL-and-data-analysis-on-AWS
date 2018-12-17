@@ -221,7 +221,7 @@ The fifth bucket stores the data that **complete topic detection job**<br>
 
 * Click **Create**.
 
-* Make sure that your S3 buckets contain those five buckets
+* Make sure that your S3 buckets contain those five buckets:
 
 ![s3_buckets.png](/images/s3_buckets.png)<br>  
 

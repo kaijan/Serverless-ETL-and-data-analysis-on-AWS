@@ -69,11 +69,11 @@ First setup VPC in which you want to create your cluster.
 
 * Select the Security Group that attach on **Redshift-VPC** which group name is **default** then select **Inbound Rules**.
 
-* Click **Edit**.
+* Click **Edit rules**.
 
-*Click **Add another rule** below, **Type** for **ALL Traffic**, Source for **0.0.0.0/0**.
+* Click **Add Rule** below, **Type** for **ALL Traffic**, Source for **0.0.0.0/0**.
 
-* Click **Save**.
+* Click **Save rules**.
 
 ![redshift2.png](/images/redshift2.png)
 

@@ -131,7 +131,7 @@ Amazon Comprehend uses a pre-trained model to examine and analyze a document or 
 
 * 	Click **Save** to save the change of function.
 
-* 	Now you can upload a csv file into **“yourname-topic-analysis”** bucket to test that whether this Lambda function operating normally.
+* 	Now you can re-upload a csv file into **“yourname-topic-analysis”** bucket to test that whether this Lambda function operating normally.
 
 * 	On the **Services** menu, click **S3**.
 

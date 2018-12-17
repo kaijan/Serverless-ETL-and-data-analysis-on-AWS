@@ -8,7 +8,7 @@ You will learn how to use Amazon QuickSight (AWS BI service) to visualize the da
 
 ### Setting Up Amazon QuickSight
 
-* First you need to register QuickSight.
+* Go to AWS Services page by searching **Quicksight** by AWS Services search bar.
 
     * Please confirm the user have Administrator permission to sign up QuickSight.
 
@@ -16,9 +16,7 @@ You will learn how to use Amazon QuickSight (AWS BI service) to visualize the da
 
 ![qs1.png](/images/qs1.png)
 
-* Select the subscription type, choose **Standard**. To confirm, choose **Continue**. 
-
-![qs2.png](/images/qs2.png)
+* Choose **Standard**, click **Continue**. 
  
 * Provide requested information and setting then click on **Finish**.
 

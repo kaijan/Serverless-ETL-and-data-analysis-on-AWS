@@ -4,6 +4,12 @@ You use Amazon Comprehend to examine and analyze a document to determine common 
 
 Next, we will use Athena to query the data in an easy way with data catalog of Glue, and use Redshift to do data analysis that often processing structural data query job for long term workflow. Both of them can be used for data analysis, choose one suitable for your application.
 
+
+## Prerequisites
+
+* Make sure the region is **US East (N. Virginia)**, which its short name is **us-east-1**.
+
+
 ## Start sorting data by using Athena
 
 Amazon Athena is an interactive query service that makes it easy to analyze data directly in Amazon S3 using standard SQL. It is a serverless service and does not need any infrastructure to create, manage, or scale data sets. It works directly on top of Amazon S3 data sets. It creates external tables and therefore does not manipulate S3 data sources, working as a read-only service from an S3 perspective. 

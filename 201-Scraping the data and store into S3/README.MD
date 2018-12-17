@@ -2,6 +2,17 @@
 
 In this tutorial, we will create IAM roles for multiple AWS services, whcih is a web service that helps you securely control access to AWS resources. You use IAM to control who is authenticated (signed in) and authorized (has permissions) to use resources.
 
+## Prerequisites
+
+* Make sure the region is **US East (N. Virginia)**, which its short name is **us-east-1**.
+
+* Download this **repository** and unzip, ensure that **data** folder including three files:
+
+    * USvideos.csv
+    * US-category-id.json
+    * word_analysis.csv
+
+
 ## Create IAM roles
 
 ### IAM role for AWS Glue

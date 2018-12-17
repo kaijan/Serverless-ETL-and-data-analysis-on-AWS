@@ -3,6 +3,11 @@
 After you upload data into S3, then trigger a Lambda function to do ETL which is a type of data integration that refers to the three steps (Extrect, Transform and Load) used to blend data from multiple sources, here we will use [AWS Glue](https://aws.amazon.com/tw/glue/) to do it. [How it works?](https://docs.aws.amazon.com/glue/latest/dg/how-it-works.html)
 
 
+## Prerequisites
+
+* Make sure the region is **US East (N. Virginia)**, which its short name is **us-east-1**.
+
+
 ## Setup data catalog in AWS Glue
 
 The AWS Glue Data Catalog is your persistent metadata store. It is a managed service that lets you store, annotate, and share metadata in the AWS Cloud in the same way you would in an Apache Hive metastore. Now we will create database, tables, crawlers, jobs in AWS Glue.

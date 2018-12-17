@@ -129,7 +129,7 @@ First setup VPC in which you want to create your cluster.
 
 * Click **Add connection**.
 
-* Enter Connection name: **redshift-spectrum**.
+* Enter Connection name: **redshift-connection**.
 
 * Select Connection type **Amazon Redshift**.
 
@@ -148,8 +148,6 @@ First setup VPC in which you want to create your cluster.
 * Select **AWSGlueServiceRoleDefault** as **IAM role**, and click **Test connection**. You will find below screen after testing.
 
 ![redshift5.png](/images/redshift5.png)
-
-![redshift6.png](/images/redshift6.png)
 
 * On the **Services** menu, click **AWS Glue**.
 

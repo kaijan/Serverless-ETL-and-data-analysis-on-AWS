@@ -27,7 +27,7 @@ This use case using trending YouTube video data to analyze which video channel o
 ![lab_architecture.png](/images/lab_architecture.png)
 
 As illustrated in the preceding diagram, this is a big data processing in this model:<br>
-1. Developer scraping the data and store it into S3.<br>
+1. [Developer scraping the data and store it into S3.])https://github.com/ecloudvalley/Serverless-ETL-and-data-analysis-on-AWS/tree/master/201-Scraping%20the%20data%20and%20store%20into%20S3)
 2. Once S3 get the data then trigger a Lambda function to do ETL with Glue.<br>
 3. On the other hand, AWS Comprehend doing topic modeling job as sentiment analysis with certain data.<br>
 4. Athena or Redshift Spectrum will perform query job known as data analysis when ETL job finished. <br>

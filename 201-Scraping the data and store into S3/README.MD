@@ -25,7 +25,7 @@ In this tutorial, we will create IAM roles for multiple AWS services, whcih is a
 
 * For role type, choose **AWS Service**, find and choose **Glue**, and choose **Next: Permissions**.
 
-* On the **Attach permissions policy** page, search and choose **AmazonS3FullAccess, AWSGlueConsoleFullAccess**, **AmazonEC2FullAccess**, Click **Next: Tags**, and **Next: Review**.
+* On the **Attach permissions policy** page, search and choose **AmazonS3FullAccess, AWSGlueConsoleFullAccess**, **AmazonEC2FullAccess**, click **Next: Tags**, and **Next: Review**.
 
 * On the **Review** page, enter the following detail:
 **Role name: AWSGlueServiceRoleDefault**
@@ -101,7 +101,7 @@ You successfully create the role that allow AWS Glue get access to S3.<br><br>
 
 * For role type, choose **AWS Service**, find and choose **Lambda**, and choose **Next: Permissions**.
 
-* On the **Attach permissions policy** page, search and choose **AmazonS3FullAccess**, and choose **Next: Review**.
+* On the **Attach permissions policy** page, search and choose **AmazonS3FullAccess**, click **Next: Tags**, and **Next: Review**.
 
 * On the **Review** page, enter the following detail:
 **Role name: LambdaAutoETL**
@@ -148,7 +148,7 @@ You successfully create the role that allow Lambda trigger ETL job automatically
 
 * For role type, choose **AWS Service**, find and choose **Lambda**, and choose **Next: Permissions**.
 
-* On the **Attach permissions policy** page, search and choose **AmazonS3FullAccess, IAMFullAccess, ComprehendFullAccess** and choose **Next: Review**.
+* On the **Attach permissions policy** page, search and choose **AmazonS3FullAccess, IAMFullAccess, ComprehendFullAccess**, click **Next: Tags**, and **Next: Review**.
 
 * On the **Review** page, enter the following detail:
 **Role name: Comprehend-Job**
@@ -171,7 +171,7 @@ You successfully create the role that allow Lambda trigger topic detection job a
 
 * For role type, choose **AWS Service**, find and choose **Redshift**, and choose **Redshift – Customizable** below then click **Next: Permissions**.
 
-* On the **Attach permissions policy** page, search and choose **AmazonS3FullAccess, AmazonAthenaFullAccess, AWSGlueConsoleFullAccess** and choose **Next: Review**.
+* On the **Attach permissions policy** page, search and choose **AmazonS3FullAccess, AmazonAthenaFullAccess, AWSGlueConsoleFullAccess**, click **Next: Tags**, and **Next: Review**.
 
 * On the **Review** page, enter the following detail:
 **Role name: SpectrumRole**

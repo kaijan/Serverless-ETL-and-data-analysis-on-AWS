@@ -77,9 +77,9 @@ First setup VPC in which you want to create your cluster.
 
 * Click **Edit rules**.
 
-* Click **Add Rule** below, **Type** for **ALL Traffic**, Source for **0.0.0.0/0**.
+* Click **Add Rule** below, type for **ALL Traffic**, Source for **0.0.0.0/0**.
 
-* Click **Save rules**.
+* Click **Save rules**, and **Close**.
 
 ![redshift2.png](/images/redshift2.png)
 
@@ -161,7 +161,7 @@ First setup VPC in which you want to create your cluster.
 
 * Click **Add job**.
 
-* Enter the **Name “redshift-query”**.
+* Enter the Name: **redshift-query**.
 
 * Select **AWSGlueServiceRoleDefault** as **IAM role** and click **Next**.
 
@@ -175,7 +175,7 @@ First setup VPC in which you want to create your cluster.
 
 * Select **redshift-connection** for **Connection** and enter the **Database name “mydb”** then click **Next**.
 
-* 	Click **Next** you will find this screen below.
+* 	Click **Save job and edit script** you will find this screen below.
 
 ![redshift8.png](/images/redshift8.png)
 

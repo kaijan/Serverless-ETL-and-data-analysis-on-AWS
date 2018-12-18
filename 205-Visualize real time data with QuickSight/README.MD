@@ -18,7 +18,7 @@ You will learn how to use Amazon QuickSight (AWS BI service) to visualize the da
 
     * Please confirm the user have Administrator permission to sign up QuickSight.
 
-* Provide your email address on **Welcome to QuickSight page**. Click **Continue**.
+* Provide your email address on **Welcome to QuickSight page**. Click **Continue** and **Next** until to finish **Get Started**.
 
 * Click **Sign up for QuickSight**.
 

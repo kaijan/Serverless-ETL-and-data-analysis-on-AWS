@@ -75,7 +75,7 @@ Now you finish the crawler setting, and going to create a job to transform data 
 
 ![glue4.png](/images/glue4.png)
 
-* 	Verify the schema mapping, and choose **Next** and click **Finish**.
+* 	Verify the schema mapping, and choose **Next** and click **Save job and edit script**. Skip Script editor tips.
 
 ![glue5.png](/images/glue5.png)
 

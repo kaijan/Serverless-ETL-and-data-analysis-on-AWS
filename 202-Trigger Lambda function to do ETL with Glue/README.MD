@@ -145,7 +145,7 @@ In order to analyze the channel category, we need to perform another job in Glue
 
 ![glue9.png](/images/glue9.png)
 
-* 	Verify the schema mapping, and choose **Next** and click **Finish**.
+* 	Verify the schema mapping, and choose **Next** and click **Save job and edit script**.
 
 ![glue10.png](/images/glue10.png)
 

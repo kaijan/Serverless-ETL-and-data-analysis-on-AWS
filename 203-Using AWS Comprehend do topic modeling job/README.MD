@@ -89,7 +89,7 @@ Amazon Comprehend uses a pre-trained model to examine and analyze a document or 
 
 * 	Choose **Author from scratch**.
 
-* 	Enter function Name **comprehend-lambda**.
+* 	Enter function Name: **comprehend-lambda**.
 
 * 	Select **python 3.6** in **Runtime** blank.
 
@@ -149,15 +149,15 @@ Amazon Comprehend uses a pre-trained model to examine and analyze a document or 
 
 *	Select file **word_analysis.csv** and click **Upload**.
 
-* 	When it upload finish go to your **Amazon comprehend** console
+* 	When it upload finish go to your **Amazon comprehend** console.
 
-* 	Click **Topic modeling**
+* 	Click **Topic modeling**.
 
 * 	**You will find a new job is running**
 
 ![lambda_comprehend2.png](/images/lambda_comprehend2.png)
 
-* 	Download the output of job in **yourname-topic-analysis-result** bucket after job completed which is a result from topic modeling<br>
+* 	Download the output of job in **yourname-topic-analysis-result** bucket after job completed which is a result from topic modeling.
 
 ![lambda_comprehend3.png](/images/lambda_comprehend3.png)
 

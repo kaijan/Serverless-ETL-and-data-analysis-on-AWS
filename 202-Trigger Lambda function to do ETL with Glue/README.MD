@@ -119,7 +119,7 @@ Now you finish the crawler setting, and going to create a job to transform data 
 * That means you finish the ETL process of csv to parquet format **(USvideos.csv)**.
 
 
-### Add jobs for data of US-category-id
+### Add jobs for data of US-category-id,json
 
 In order to analyze the channel category, we need to perform another job in Glue data catalog which contains category data (**US-category-id.json**).
 
@@ -135,7 +135,7 @@ In order to analyze the channel category, we need to perform another job in Glue
 
 * 	Choose **Next**.
 
-*	Choose **us_category_id_json** as the data source, and choose **Next**.
+*	Choose **us-category-id.json** as the data source, and choose **Next**.
 
 * 	Choose **Create tables in your data target**.
 

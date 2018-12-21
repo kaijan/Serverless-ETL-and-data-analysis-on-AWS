@@ -38,23 +38,23 @@ In this tutorial, we will create IAM roles for multiple AWS services, whcih is a
 
 * On the JSON tab, paste in the following policy:
 
+      {
+       "Version": "2012-10-17",
+       "Statement": [
          {
-          "Version": "2012-10-17",
-          "Statement": [
-            {
-              "Effect": "Allow",
-              "Action": [
-                "logs:CreateLogGroup",
-                "logs:CreateLogStream",
-                "logs:PutLogEvents",
-                "logs:DescribeLogStreams"
-            ],
-              "Resource": [
-                "arn:aws:logs:*:*:*"
-            ]
-          }
+           "Effect": "Allow",
+           "Action": [
+             "logs:CreateLogGroup",
+             "logs:CreateLogStream",
+             "logs:PutLogEvents",
+             "logs:DescribeLogStreams"
+         ],
+           "Resource": [
+             "arn:aws:logs:*:*:*"
          ]
-        }
+       }
+      ]
+     }
 
 * Click **Review policy**.
 

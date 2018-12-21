@@ -66,20 +66,20 @@ In this tutorial, we will create IAM roles for multiple AWS services, whcih is a
 
 * On the JSON tab, paste in the following policy:
 
-         {
-             "Version": "2012-10-17",
-             "Statement": [
-                 {
-                     "Sid": "VisualEditor0",
-                     "Effect": "Allow",
-                     "Action": [
-                         "ec2:DeleteTags",
-                         "ec2:CreateTags"
-                     ],
-                     "Resource": "*"
-                 }
-             ]
-         }
+      {
+          "Version": "2012-10-17",
+          "Statement": [
+              {
+                  "Sid": "VisualEditor0",
+                  "Effect": "Allow",
+                  "Action": [
+                      "ec2:DeleteTags",
+                      "ec2:CreateTags"
+                  ],
+                  "Resource": "*"
+              }
+          ]
+      }
 
 * Click **Review policy**.
 
@@ -114,20 +114,20 @@ You successfully create the role that allow AWS Glue get access to S3.<br><br>
 
 * On the JSON tab, paste in the following policy:
 
-         {
-            "Version": "2012-10-17",
-            "Statement": [
-                {
-                    "Sid": "VisualEditor0",
-                    "Effect": "Allow",
-                    "Action": [
-                        "athena:*",
-                        "glue:*"
-                    ],
-                    "Resource": "*"
-                }
-            ]
-        }
+      {
+         "Version": "2012-10-17",
+         "Statement": [
+             {
+                 "Sid": "VisualEditor0",
+                 "Effect": "Allow",
+                 "Action": [
+                     "athena:*",
+                     "glue:*"
+                 ],
+                 "Resource": "*"
+             }
+         ]
+     }
 
 * Click **Review policy**.
 

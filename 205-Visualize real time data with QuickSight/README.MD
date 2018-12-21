@@ -219,8 +219,9 @@ You will learn how to use Amazon QuickSight (AWS BI service) to visualize the da
 
 * 	Enter SQL name **President** and paste below code in Custom SQL field.
 
-         Select * From "my-data"."james_etl_result" where title like '%President%'; 
-         (for the title that contain “President”)
+         Select * From "my-data"."yourname_etl_result" where title like '%President%'; 
+
+    *  It means for the title that contain “President”
 
 ![qs40.png](/images/qs40.png)
 

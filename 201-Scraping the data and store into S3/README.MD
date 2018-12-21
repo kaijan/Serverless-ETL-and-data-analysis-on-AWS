@@ -127,7 +127,7 @@ You successfully create the role that allow AWS Glue get access to S3.<br><br>
                  "Resource": "*"
              }
          ]
-     }
+       }
 
 * Click **Review policy**.
 

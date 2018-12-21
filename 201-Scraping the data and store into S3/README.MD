@@ -32,7 +32,7 @@ In this tutorial, we will create IAM roles for multiple AWS services, whcih is a
 
 * Click **Create role**.
 
-* Choose **Roles** page, select the role **AWSGlueServiceDefault** you just created.
+* Choose **Roles** page, select the role **AWSGlueServiceRoleDefault** you just created.
 
 * On the **Permissions** tab, choose the link **add inline policy** to create an inline policy.
 

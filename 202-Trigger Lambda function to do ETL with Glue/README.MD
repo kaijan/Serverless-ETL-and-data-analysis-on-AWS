@@ -40,7 +40,7 @@ The AWS Glue Data Catalog is your persistent metadata store. It is a managed ser
 
 * 	Review the steps, and choose **Finish**.
 
-* 	The crawler is ready to run. Choose **Run it now**.
+* 	The crawler is ready to run. Choose **Run crawler**.
 
 * 	When the crawler has finished, two table has been added. Choose **Tables** in the left navigation pane, and then choose **usvideos_csv** to confirmed.
 
@@ -110,7 +110,7 @@ Now you finish the crawler setting, and going to create a job to transform data 
 
 * 	Review the steps, and choose **Finish**.
 
-* 	The crawler is ready to run. Choose **Run it now**.
+* 	The crawler is ready to run. Choose **Run crawler**.
 
 * 	After the crawler has finished, there is a new table in the **my-data** database:
 
@@ -179,7 +179,7 @@ Now you need to add another parquet table and crawler
 
 *	Review the steps, and choose **Finish**.
 
-* 	The crawler is ready to run. Choose **Run it now**.
+* 	The crawler is ready to run. Choose **Run crawler**.
 
 * 	After the crawler has finished, there is a new table in the **my-data** database:
 

@@ -28,7 +28,7 @@ This use case using trending YouTube video data to analyze which video channel o
 
 
 ## Lab Architecture
-![lab_architecture.png](/images/lab_architecture.png)
+![lab_architecture.png](/images/lab_architecture2.png)
 
 As illustrated in the preceding diagram, this is a big data processing in this model:
 1. [Developer scraping the data and store it into S3.](https://github.com/ecloudvalley/Serverless-ETL-and-data-analysis-on-AWS/tree/master/201-Scraping%20the%20data%20and%20store%20into%20S3)

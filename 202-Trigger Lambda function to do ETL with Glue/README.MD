@@ -92,7 +92,7 @@ Now you finish the crawler setting, and going to create a job to transform data 
 
 * 	When the job has finished, add a new table for the Parquet data using a crawler.
 
-* 	In the navigation pane, choose **Add crawler**. Add type Crawler name **“parquet-crawler1”** and choose **Next**.
+* 	In the navigation pane, choose **Add crawler**. Add type Crawler name **parquet-crawler1** and choose **Next**.
 
 * 	Choose **S3** as the **Data store**.
 
@@ -110,7 +110,7 @@ Now you finish the crawler setting, and going to create a job to transform data 
 
 * 	Review the steps, and choose **Finish**.
 
-* 	The crawler is ready to run. Choose **Run crawler**.
+* 	The crawler is ready to run. Choose **Run it now**.
 
 * 	After the crawler has finished, there is a new table in the **my-data** database:
 
@@ -119,7 +119,7 @@ Now you finish the crawler setting, and going to create a job to transform data 
 * That means you finish the ETL process of csv to parquet format **(USvideos.csv)**.
 
 
-### Add jobs for data of US-category-id,json
+### Add jobs for data of US-category-id.json
 
 In order to analyze the channel category, we need to perform another job in Glue data catalog which contains category data (**US-category-id.json**).
 
@@ -135,7 +135,7 @@ In order to analyze the channel category, we need to perform another job in Glue
 
 * 	Choose **Next**.
 
-*	Choose **us-category-id.json** as the data source, and choose **Next**.
+*	Choose **us-category-id_json** as the data source, and choose **Next**.
 
 * 	Choose **Create tables in your data target**.
 
@@ -161,7 +161,7 @@ Now you need to add another parquet table and crawler
 
 * 	When the job has finished, add a new table for the Parquet data using a crawler.
 
-* 	In the navigation pane, choose **Add crawler**. Add type Crawler name **“parquet-data2”** and choose **Next**.
+* 	In the navigation pane, choose **Add crawler**. Add type Crawler name **parquet-data2** and choose **Next**.
 
 * 	Choose **S3** as the **Data store**.
 
@@ -179,7 +179,7 @@ Now you need to add another parquet table and crawler
 
 *	Review the steps, and choose **Finish**.
 
-* 	The crawler is ready to run. Choose **Run crawler**.
+* 	The crawler is ready to run. Choose **Run it now?**.
 
 * 	After the crawler has finished, there is a new table in the **my-data** database:
 

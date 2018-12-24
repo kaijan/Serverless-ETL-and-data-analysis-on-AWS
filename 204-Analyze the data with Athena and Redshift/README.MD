@@ -67,7 +67,7 @@ First setup VPC in which you want to create your cluster.
 
 * Click **Add Endpoint** below **Service endpoints** and select **com.amazonaws.us-east-1.s3** as service.
 
-![redshift1.png](/images/redshift1.png)
+![redshift1.png](/images/redshift1.jpg)
 
 * Click **Create VPC**.
 
@@ -81,7 +81,7 @@ First setup VPC in which you want to create your cluster.
 
 * Click **Save rules**, and **Close**.
 
-![redshift2.png](/images/redshift2.png)
+![redshift2.png](/images/redshift2.jpg)
 
 ### Setting up Redshift
 
@@ -99,7 +99,7 @@ First setup VPC in which you want to create your cluster.
 
 * Click **add all the subnets** then click **Create**.
 
-![redshift3.png](/images/redshift3.png)
+![redshift3.png](/images/redshift3.jpg)
 
 * In the navigation pane, choose **Clusters**.
 
@@ -125,7 +125,7 @@ First setup VPC in which you want to create your cluster.
 
 * It will need 10-15 minutes passed before the cluster was ready to use.
     
-![redshift4.png](/images/redshift4.png)
+![redshift4.png](/images/redshift4.jpg)
 
 ### Connect to AWS Glue
 

@@ -64,19 +64,15 @@ Amazon Comprehend uses a pre-trained model to examine and analyze a document or 
 
 ![setup_comprehend4.png](/images/setup_comprehend4.png)
 
-*   You will find that a **output** folder inside. 
-
-![setup_comprehend5.png](/images/setup_comprehend5.png)
-
 *   Click **output** you will see a file **output.tar.gz**.
 
-![setup_comprehend6.png](/images/setup_comprehend6.png)
+![setup_comprehend5.png](/images/setup_comprehend5.png)
 
 *   Download the file you will get the topic modeling result as csv file.
 
 ![setup_comprehend7.png](/images/setup_comprehend7.png)
 
-![setup_comprehend8.png](/images/setup_comprehend8.png)
+![setup_comprehend6.png](/images/setup_comprehend6.png)
 
 
 ## Automated topic modeling job

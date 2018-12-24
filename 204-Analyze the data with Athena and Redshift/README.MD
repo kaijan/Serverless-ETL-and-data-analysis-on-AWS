@@ -139,7 +139,7 @@ First setup VPC in which you want to create your cluster.
 
 * Select Connection type **Amazon Redshift**.
 
-* choose **Require SSL connection**, and click **next**.
+* choose **Require SSL connection**, and click **Next**.
 
 * 	Select **my-cluster** in **Cluster** blank.
 
@@ -149,11 +149,11 @@ First setup VPC in which you want to create your cluster.
 
 * Click **Finish**.
 
-* Select **redshift-spectrum** and click **Test connection**.
+* Select **redshift-spectrum**, and click **Test connection**.
 
 * Select **AWSGlueServiceRoleDefault** as **IAM role**, and click **Test connection**. You will find below screen after testing.
 
-![redshift5.png](/images/redshift5.png)
+![redshift5.png](/images/redshift5.jpg)
 
 * On the **Services** menu, click **AWS Glue**.
 
@@ -163,9 +163,9 @@ First setup VPC in which you want to create your cluster.
 
 * Enter the Name: **redshift-query**.
 
-* Select **AWSGlueServiceRoleDefault** as **IAM role** and click **Next**.
+* Select **AWSGlueServiceRoleDefault** as **IAM role**, and click **Next**.
 
-* Select **“usvideos_csv”** and click **Next**.
+* Select **usvideos_csv**, and click **Next**.
 
 ![redshift7.png](/images/redshift7.png)
 
@@ -173,7 +173,7 @@ First setup VPC in which you want to create your cluster.
 
 * Select **Data store** as **JDBC**.
 
-* Select **redshift-connection** for **Connection** and enter the **Database name “mydb”** then click **Next**.
+* Select **redshift-connection** for **Connection** and enter the **Database name: mydb** then click **Next**.
 
 * 	Click **Save job and edit script** you will find this screen below.
 

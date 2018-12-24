@@ -161,15 +161,18 @@ Amazon Comprehend uses a pre-trained model to examine and analyze a document or 
 
 ![lambda_comprehend3.png](/images/lambda_comprehend3.png)
 
+* Click **output** you will see a file **output.tar.gz**.
+
 ![lambda_comprehend4.png](/images/lambda_comprehend4.png)
 
 ![lambda_comprehend5.png](/images/lambda_comprehend5.png)
+
+* Download the file you will get the topic modeling result as csv file.
 
 ![lambda_comprehend6.png](/images/lambda_comprehend6.png)
 
 ![lambda_comprehend7.png](/images/lambda_comprehend7.png)
 
-![lambda_comprehend8.png](/images/lambda_comprehend8.png)
 
 ## Congratulations! You now have learned how to:
 

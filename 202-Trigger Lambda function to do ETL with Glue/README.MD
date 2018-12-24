@@ -16,7 +16,9 @@ The AWS Glue Data Catalog is your persistent metadata store. It is a managed ser
 
 * 	On the **Services** menu, click **AWS Glue**.
 
-* 	In the console, choose **Add database**. In the **Database name**, type **my-data**, and choose **Create**.
+* 	Choose **Database** in the navigation pane, choose **Add database**. 
+
+*  In the **Database name**, type **my-data**, and choose **Create**.
 
 * 	Choose **Crawlers** in the navigation pane, choose **Add crawler**. 
 

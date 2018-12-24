@@ -1,6 +1,6 @@
 # Developer scraping the data and store it into S3
 
-In this tutorial, we will create IAM roles for multiple AWS services, whcih is a web service that helps you securely control access to AWS resources. You use IAM to control who is authenticated (signed in) and authorized (has permissions) to use resources.
+In this tutorial, we will create IAM roles for multiple AWS services, whcih is a web service that helps you securely control access to AWS resources. You use IAM to control who is authenticated (signed in) and authorized (has permissions) to use resources. After roles created, we will create S3 buckets and upload sample data (trending YouTube video data).
 
 ## Prerequisites
 
@@ -186,8 +186,10 @@ You successfully create the role for Redshift clusters to call S3, Athena and Gl
 
 ## Create S3 bucket to store data
 
+This part will create five bucket, each bucket apply different data process stage.
+
 The first bucket stores the data that contain YouTube trending data<br>
-The second bucket stores the data that after **doing csv ETL process**<br>The 
+The second bucket stores the data that after **doing csv ETL process**<br>
 The third bucket stores the data that after **doing json ETL process**<br>
 The fourth bucket stores the data that **doing topic detection job**<br>
 The fifth bucket stores the data that **complete topic detection job**<br>

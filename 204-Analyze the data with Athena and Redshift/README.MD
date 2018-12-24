@@ -167,7 +167,7 @@ First setup VPC in which you want to create your cluster.
 
 * Select **usvideos_csv**, and click **Next**.
 
-![redshift7.png](/images/redshift7.png)
+![redshift7.png](/images/redshift7.jpg)
 
 * Choose **Create tables in your data target**.
 
@@ -177,7 +177,7 @@ First setup VPC in which you want to create your cluster.
 
 * 	Click **Save job and edit script** you will find this screen below.
 
-![redshift8.png](/images/redshift8.png)
+![redshift8.png](/images/redshift8.jpg)
 
 * 	Click **Save job and edit script**.
 
@@ -185,7 +185,7 @@ First setup VPC in which you want to create your cluster.
 
     * In this job, AWS Glue send data to Redshift cluster and processing data by the cluster.
 
-![redshift9.png](/images/redshift9.png)
+![redshift9.png](/images/redshift9.jpg)
 
 ## Congratulations! You now have learned how to:
 

@@ -34,7 +34,7 @@ Amazon Comprehend uses a pre-trained model to examine and analyze a document or 
 
 * 	Enter **50** for **Numbers of topic**.
 
-* 	For **Job Name**, enter **FirstJob**.
+* 	For **Job Name**, enter **first_job**.
 
 * 	For **S3 data location** of output data, enter the URL of **“yourname-topic-analysis-result” (e.g., s3://james-topic-analysis-result/)**.
 
@@ -42,7 +42,7 @@ Amazon Comprehend uses a pre-trained model to examine and analyze a document or 
 
 * 	For **Permission to access** select **any S3 bucket**.
 
-* 	For **Name suffix** enter **“user”**.
+* 	For **Name suffix** enter **user**.
 
 ![setup_comprehend1.png](/images/setup_comprehend1.png)
 

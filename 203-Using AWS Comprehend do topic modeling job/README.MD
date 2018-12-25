@@ -56,7 +56,7 @@ Amazon Comprehend uses a pre-trained model to examine and analyze a document or 
 
 ![setup_comprehend3.png](/images/setup_comprehend3.png)
 
-* 	When the job complete the status change to *Completed*.
+* 	When the job complete the status change to *Completed*. You can click reflesh icon if waiting a while.
 
 * 	After job completed, you will find a new output in **yourname-topic-analysis-result** bucket in Amazon S3.
 

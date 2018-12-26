@@ -236,7 +236,7 @@ Next step you will learn how to trigger ETL job with Lambda function automatical
 
     * Select bucket **“yourname-dataset”** as Bucket.
     
-    * Select **PUT** as **Event type**.
+    * Select **All Object create events** as **Event type**.
     
     * Remember to check **Enable trigger** box.
 

@@ -127,7 +127,7 @@ Amazon Comprehend uses a pre-trained model to examine and analyze a document or 
 
 * 	In **configuration**, click **S3** below **Add triggers** to add trigger for **comprehend-lambda** function
 
-* 	and drop down to **Configure triggers** part, select bucket **“yourname-topic-analysis”** as Bucket, select **PUT** as **Event type**. Remember to check Enable trigger box then you click **Add**.
+* 	and drop down to **Configure triggers** part, select bucket **“yourname-topic-analysis”** as Bucket, select **All Object create events** as **Event type**. Remember to check Enable trigger box then you click **Add**.
 
 ![lambda_comprehend1.png](/images/lambda_comprehend1.png)
 

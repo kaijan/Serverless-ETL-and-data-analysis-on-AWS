@@ -14,7 +14,10 @@ In this tutorial, we will create IAM roles for multiple AWS services, whcih is a
 
    > Please download completely folder from Github, click **Clone or download** which is **green icon** on upper right corner, and choose **Download ZIP**.
 
+
 ## Create IAM roles
+
+* Please check each of following roles has been created.
 
 ### IAM role for AWS Glue
 

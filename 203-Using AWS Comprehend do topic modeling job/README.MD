@@ -50,7 +50,9 @@ Amazon Comprehend uses a pre-trained model to examine and analyze a document or 
 
 * 	It will take a few time running.
 
-![setup_comprehend2.png](/images/setup_comprehend2.png)
+<p align="center">
+    <img src="images/setup_comprehend2.png" width="40%" height="40%">
+</p>
 
 * 	Then you will see your job is running.
 
@@ -70,9 +72,13 @@ Amazon Comprehend uses a pre-trained model to examine and analyze a document or 
 
 *   Download the file you will get the topic modeling result as csv file.
 
-![setup_comprehend7.png](/images/setup_comprehend7.png)
+<p align="left">
+    <img src="images/setup_comprehend7.png" width="60%" height="60%">
+</p>
 
-![setup_comprehend6.png](/images/setup_comprehend6.png)
+<p align="left">
+    <img src="images/setup_comprehend6.png" width="80%" height="80%">
+</p>
 
 
 ## Automated topic modeling job
@@ -167,8 +173,9 @@ Amazon Comprehend uses a pre-trained model to examine and analyze a document or 
 
 ![lambda_comprehend6.png](/images/lambda_comprehend6.png)
 
-![lambda_comprehend7.png](/images/lambda_comprehend7.png)
-
+<p align="center">
+    <img src="images/lambda_comprehend7.png" width="70%" height="70%">
+</p>
 
 ## Congratulations! You now have learned how to:
 

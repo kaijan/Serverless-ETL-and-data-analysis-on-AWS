@@ -35,9 +35,9 @@ As illustrated in the preceding diagram, this is a big data processing in this m
 * [Developer scraping the data and store it into S3.](https://github.com/ecloudvalley/Serverless-ETL-and-data-analysis-on-AWS/tree/master/201-Scraping%20the%20data%20and%20store%20into%20S3)
 
 2. ETL
-* [Once S3 get the data then trigger a Lambda function to do ETL with Glue.](https://github.com/ecloudvalley/Serverless-ETL-and-data-analysis-on-AWS/tree/master/202-Trigger%20Lambda%20function%20to%20do%20ETL%20with%20Glue)
+* Once S3 get the data then [trigger a Lambda function to do ETL with Glue.](https://github.com/ecloudvalley/Serverless-ETL-and-data-analysis-on-AWS/tree/master/202-Trigger%20Lambda%20function%20to%20do%20ETL%20with%20Glue)
 
-* [On the other hand, AWS Comprehend doing topic modeling job as sentiment analysis with certain data.](https://github.com/ecloudvalley/Serverless-ETL-and-data-analysis-on-AWS/tree/master/203-Using%20AWS%20Comprehend%20do%20topic%20modeling%20job)
+* On the other hand, [AWS Comprehend doing topic modeling job as sentiment analysis with certain data.](https://github.com/ecloudvalley/Serverless-ETL-and-data-analysis-on-AWS/tree/master/203-Using%20AWS%20Comprehend%20do%20topic%20modeling%20job)
 
 3. Analysis and Visualize
 * [Athena or Redshift Spectrum will perform query job known as data analysis when ETL job finished.](https://github.com/ecloudvalley/Serverless-ETL-and-data-analysis-on-AWS/tree/master/204-Analyze%20the%20data%20with%20Athena%20and%20Redshift)

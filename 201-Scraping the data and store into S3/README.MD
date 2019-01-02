@@ -93,7 +93,7 @@ In this tutorial, we will create IAM roles for multiple AWS services, whcih is a
 
 * Now confirm you have policies as below figure.
 
-![iam1.png](/images/iam1.png)
+![iam1.png](./images/iam1.png)
 
 You successfully create the role that allow AWS Glue get access to S3.<br><br>
 
@@ -140,7 +140,7 @@ You successfully create the role that allow AWS Glue get access to S3.<br><br>
 * Click **Create policy**.
 
 * Now confirm you have policies as below figure.
-![iam2.png](/images/iam2.png)
+![iam2.png](./images/iam2.png)
 
 You successfully create the role that allow Lambda trigger ETL job automatically with AWS Glue by object put event of S3.<br><br>
 
@@ -163,7 +163,7 @@ You successfully create the role that allow Lambda trigger ETL job automatically
 
 * On the **Permissions** tab, now confirm you have policies as below figure.
 
-![iam3.png](/images/iam3.png)
+![iam3.png](./images/iam3.png)
 
 You successfully create the role that allow Lambda trigger topic detection job automatically with Amazon Comprehend by object put event of S3.<br><br>
 
@@ -184,7 +184,7 @@ You successfully create the role that allow Lambda trigger topic detection job a
 
 * Choose **Roles** page, select the role **SpectrumRole** you just created. Now confirm you have below figure.
 
-![iam4.png](/images/iam4.png)
+![iam4.png](./images/iam4.png)
 
 You successfully create the role for Redshift clusters to call S3, Athena and Glue service.<br><br>
 
@@ -241,6 +241,6 @@ The fifth bucket stores the data that **complete topic detection job**.<br>
 
 * Make sure that your S3 buckets contain those five buckets:
 
-![s3_buckets.png](/images/s3_buckets.png) 
+![s3_buckets.png](./images/s3_buckets.png) 
 
 ### Now you are ready to [trigger a Lambda function to do ETL with Glue](https://github.com/ecloudvalley/Serverless-ETL-and-data-analysis-on-AWS/tree/master/202-Trigger%20Lambda%20function%20to%20do%20ETL%20with%20Glue)

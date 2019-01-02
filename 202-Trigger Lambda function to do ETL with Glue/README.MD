@@ -205,9 +205,9 @@ Next step you will learn how to trigger ETL job with Lambda function automatical
 
 ### Now you are ready to use [AWS Comprehend to do topic modeling job](https://github.com/ecloudvalley/Serverless-ETL-and-data-analysis-on-AWS/tree/master/203-Using%20AWS%20Comprehend%20do%20topic%20modeling%20job)
 
-## Appendix
 
-## Trigger ETL job with Lambda function
+
+## Appendix-Trigger ETL job with Lambda function
 
 ### Create a Lambda function in order to automate ETL job with glue (automated ETL job)
 
@@ -223,7 +223,9 @@ Next step you will learn how to trigger ETL job with Lambda function automatical
 
 * 	Select **Choose an existing role** in Role blank and choose **LambdaAutoETL** as **Existing role**.
 
-   ![lambda_glue1.png](/images/lambda_glue1.png)
+<p align="center">
+    <img src="images/lambda_glue1.png" width="70%" height="70%">
+</p>
 
 * 	Click **Create function**.
 

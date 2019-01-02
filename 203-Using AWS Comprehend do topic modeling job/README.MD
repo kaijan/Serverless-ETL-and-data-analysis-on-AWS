@@ -44,7 +44,7 @@ Amazon Comprehend uses a pre-trained model to examine and analyze a document or 
 
 * 	For **Name suffix** enter **user**.
 
-![setup_comprehend1.png](/images/setup_comprehend1.png)
+![setup_comprehend1.png](./images/setup_comprehend1.png)
 
 * 	Click **Create job** to create and start the topic detection job.
 
@@ -56,7 +56,7 @@ Amazon Comprehend uses a pre-trained model to examine and analyze a document or 
 
 * 	Then you will see your job is running.
 
-![setup_comprehend3.png](/images/setup_comprehend3.png)
+![setup_comprehend3.png](./images/setup_comprehend3.png)
 
 * 	When the job complete the status change to *Completed*. You can click reflesh icon if waiting a while.
 
@@ -64,11 +64,11 @@ Amazon Comprehend uses a pre-trained model to examine and analyze a document or 
 
 * 	Click below folder:
 
-![setup_comprehend4.png](/images/setup_comprehend4.png)
+![setup_comprehend4.png](./images/setup_comprehend4.png)
 
 *   Click **output** you will see a file **output.tar.gz**.
 
-![setup_comprehend5.png](/images/setup_comprehend5.png)
+![setup_comprehend5.png](./images/setup_comprehend5.png)
 
 *   Download the file you will get the topic modeling result as csv file.
 
@@ -135,7 +135,7 @@ Amazon Comprehend uses a pre-trained model to examine and analyze a document or 
 
 * 	and drop down to **Configure triggers** part, select bucket **“yourname-topic-analysis”** as Bucket, select **All Object create events** as **Event type**. Remember to check Enable trigger box then you click **Add**.
 
-![lambda_comprehend1.png](/images/lambda_comprehend1.png)
+![lambda_comprehend1.png](./images/lambda_comprehend1.png)
 
 * 	Click **Save** to save the change of function.
 
@@ -157,21 +157,21 @@ Amazon Comprehend uses a pre-trained model to examine and analyze a document or 
 
 * 	**You will find a new job is running**
 
-![lambda_comprehend2.png](/images/lambda_comprehend2.png)
+![lambda_comprehend2.png](./images/lambda_comprehend2.png)
 
 * 	Download the output of job in **yourname-topic-analysis-result** bucket after job completed which is a result from topic modeling.
 
-![lambda_comprehend3.png](/images/lambda_comprehend3.png)
+![lambda_comprehend3.png](./images/lambda_comprehend3.png)
 
 * Click **output** you will see a file **output.tar.gz**.
 
-![lambda_comprehend4.png](/images/lambda_comprehend4.png)
+![lambda_comprehend4.png](./images/lambda_comprehend4.png)
 
-![lambda_comprehend5.png](/images/lambda_comprehend5.png)
+![lambda_comprehend5.png](./images/lambda_comprehend5.png)
 
 * Download the file you will get the topic modeling result as csv file.
 
-![lambda_comprehend6.png](/images/lambda_comprehend6.png)
+![lambda_comprehend6.png](./images/lambda_comprehend6.png)
 
 <p align="center">
     <img src="images/lambda_comprehend7.png" width="70%" height="70%">

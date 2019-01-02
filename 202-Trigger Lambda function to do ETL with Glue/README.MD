@@ -46,9 +46,9 @@ The AWS Glue Data Catalog is your persistent metadata store. It is a managed ser
 
 * 	When the crawler has finished, two table has been added. Choose **Tables** in the left navigation pane, and then choose **usvideos_csv** to confirmed.
 
-![glue2.png](/images/glue2.png)
+![glue2.png](./images/glue2.png)
 
-![glue3.png](/images/glue3.png)
+![glue3.png](./images/glue3.png)
 
 Now you finish the crawler setting, and going to create a job to transform data type.
 

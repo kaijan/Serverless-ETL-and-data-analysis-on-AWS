@@ -171,10 +171,12 @@ Amazon Comprehend uses a pre-trained model to examine and analyze a document or 
 
 * Download the file you will get the topic modeling result as csv file.
 
-![lambda_comprehend6.png](./images/lambda_comprehend6.png)
+<p align="left">
+    <img src="images/lambda_comprehend6.png" width="60%" height="60%">
+</p>
 
 <p align="center">
-    <img src="images/lambda_comprehend7.png" width="70%" height="70%">
+    <img src="images/lambda_comprehend7.png" width="60%" height="60%">
 </p>
 
 ## Congratulations! You now have learned how to:

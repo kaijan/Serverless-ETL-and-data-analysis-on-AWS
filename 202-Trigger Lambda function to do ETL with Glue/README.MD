@@ -30,6 +30,10 @@ The AWS Glue Data Catalog is your persistent metadata store. It is a managed ser
 
 * 	Select the bucket that you create first (**“yourname-dataset”**), and choose **Next**.
 
+<p align="center">
+    <img src="images/glue1.png" width="60%" height="60%">
+</p>
+
 ![glue1.png](/images/glue1.png)
 
 * 	On **Add another data store** page, choose **No**, and choose **Next**.

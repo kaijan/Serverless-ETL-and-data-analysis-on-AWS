@@ -77,7 +77,9 @@ Now you finish the crawler setting, and going to create a job to transform data 
 
 *	For **Target path**, select S3 bucket with **“yourname-etl-result”** that you created before to store the results.
 
-![glue4.png](/images/glue4.png)
+<p align="center">
+    <img src="images/glue4.jpng" width="60%" height="60%">
+</p>
 
 * 	Verify the schema mapping, and choose **Next** and click **Save job and edit script**. Skip Script editor tips.
 
@@ -147,7 +149,9 @@ In order to analyze the channel category, we need to perform another job in Glue
 
 * 	For **Target path**, select S3 bucket with **“yourname-etl-result2”** that you created before to store the results.
 
-![glue9.png](/images/glue9.png)
+<p align="center">
+    <img src="images/glue9.png" width="60%" height="60%">
+</p>
 
 * 	Verify the schema mapping, and choose **Next** and click **Save job and edit script**.
 

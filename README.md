@@ -31,15 +31,18 @@ This use case using trending YouTube video data to analyze which video channel o
 ![lab_architecture.png](/images/lab_architecture2.png)
 
 As illustrated in the preceding diagram, this is a big data processing in this model:
-1. [Developer scraping the data and store it into S3.](https://github.com/ecloudvalley/Serverless-ETL-and-data-analysis-on-AWS/tree/master/201-Scraping%20the%20data%20and%20store%20into%20S3)
+1. Store
+* [Developer scraping the data and store it into S3.](https://github.com/ecloudvalley/Serverless-ETL-and-data-analysis-on-AWS/tree/master/201-Scraping%20the%20data%20and%20store%20into%20S3)
 
-2. [Once S3 get the data then trigger a Lambda function to do ETL with Glue.](https://github.com/ecloudvalley/Serverless-ETL-and-data-analysis-on-AWS/tree/master/202-Trigger%20Lambda%20function%20to%20do%20ETL%20with%20Glue)
+2. ETL
+* [Once S3 get the data then trigger a Lambda function to do ETL with Glue.](https://github.com/ecloudvalley/Serverless-ETL-and-data-analysis-on-AWS/tree/master/202-Trigger%20Lambda%20function%20to%20do%20ETL%20with%20Glue)
 
-3. [On the other hand, AWS Comprehend doing topic modeling job as sentiment analysis with certain data.](https://github.com/ecloudvalley/Serverless-ETL-and-data-analysis-on-AWS/tree/master/203-Using%20AWS%20Comprehend%20do%20topic%20modeling%20job)
+* [On the other hand, AWS Comprehend doing topic modeling job as sentiment analysis with certain data.](https://github.com/ecloudvalley/Serverless-ETL-and-data-analysis-on-AWS/tree/master/203-Using%20AWS%20Comprehend%20do%20topic%20modeling%20job)
 
-4. [Athena or Redshift Spectrum will perform query job known as data analysis when ETL job finished.](https://github.com/ecloudvalley/Serverless-ETL-and-data-analysis-on-AWS/tree/master/204-Analyze%20the%20data%20with%20Athena%20and%20Redshift)
+3. Analysis and Visualize
+* [Athena or Redshift Spectrum will perform query job known as data analysis when ETL job finished.](https://github.com/ecloudvalley/Serverless-ETL-and-data-analysis-on-AWS/tree/master/204-Analyze%20the%20data%20with%20Athena%20and%20Redshift)
 
-5. [BI tool like QuickSight or Tableau do real time data visualization.](https://github.com/ecloudvalley/Serverless-ETL-and-data-analysis-on-AWS/tree/master/205-Visualize%20real%20time%20data%20with%20QuickSight)
+* [BI tool like QuickSight or Tableau do real time data visualization.](https://github.com/ecloudvalley/Serverless-ETL-and-data-analysis-on-AWS/tree/master/205-Visualize%20real%20time%20data%20with%20QuickSight)
 
 
 ## Prerequisites

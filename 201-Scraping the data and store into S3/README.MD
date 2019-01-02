@@ -183,6 +183,7 @@ You successfully create the role that allow Lambda trigger topic detection job a
 * Click **Create role**.
 
 * Choose **Roles** page, select the role **SpectrumRole** you just created. Now confirm you have below figure.
+
 ![iam4.png](/images/iam4.png)
 
 You successfully create the role for Redshift clusters to call S3, Athena and Glue service.<br><br>
@@ -192,11 +193,11 @@ You successfully create the role for Redshift clusters to call S3, Athena and Gl
 
 This part will create five bucket, each bucket apply different data process stage.
 
-The first bucket stores the data that contain YouTube trending data<br>
-The second bucket stores the data that after **doing csv ETL process**<br>
-The third bucket stores the data that after **doing json ETL process**<br>
-The fourth bucket stores the data that **doing topic detection job**<br>
-The fifth bucket stores the data that **complete topic detection job**<br>
+The first bucket stores the data that contain YouTube trending data.<br>
+The second bucket stores the data that after **doing csv ETL process**.<br>
+The third bucket stores the data that after **doing json ETL process**.<br>
+The fourth bucket stores the data that **doing topic detection job**.<br>
+The fifth bucket stores the data that **complete topic detection job**.<br>
 
 * On the **service** menu, click **S3**.
 

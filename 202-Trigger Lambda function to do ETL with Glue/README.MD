@@ -1,6 +1,6 @@
 # Trigger Lambda function to do ETL with Glue
 
-After you upload data into S3, then trigger a Lambda function to do ETL which is a type of data integration that refers to the three steps (Extrect, Transform and Load) used to blend data from multiple sources, here we will use [AWS Glue](https://aws.amazon.com/tw/glue/) to do it. [How it works?](https://docs.aws.amazon.com/glue/latest/dg/how-it-works.html)
+After you upload data into S3, then trigger a Lambda function to do ETL automatically which is a type of data integration that refers to the three steps (Extrect, Transform and Load) used to blend data from multiple sources, here we will use [AWS Glue](https://aws.amazon.com/tw/glue/) to do it. [How it works?](https://docs.aws.amazon.com/glue/latest/dg/how-it-works.html)
 
 
 ## Prerequisites
@@ -224,7 +224,7 @@ Next step you will learn how to trigger ETL job with Lambda function automatical
 * 	Select **Choose an existing role** in Role blank and choose **LambdaAutoETL** as **Existing role**.
 
 <p align="center">
-    <img src="images/lambda_glue1.png" width="70%" height="70%">
+    <img src="images/lambda_glue1.png" width="70%" height="60%">
 </p>
 
 * 	Click **Create function**.

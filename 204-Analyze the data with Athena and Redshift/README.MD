@@ -20,7 +20,7 @@ Amazon Athena is an interactive query service that makes it easy to analyze data
 
 * On the **Query Editor** tab, choose the database **my-data**.
 
-![athena1.png](/images/athena1.png)
+![athena1.png](./images/athena1.png)
 
 * Choose the **yourname_etl_result** table.
 
@@ -32,7 +32,7 @@ Amazon Athena is an interactive query service that makes it easy to analyze data
         	
 * Click **Run Query** and results are returned that look like the following:
 
-![athena2.png](/images/athena2.png)
+![athena2.png](./images/athena2.png)
 
 * Choose the **yourname_etl_result2** table.
 
@@ -44,7 +44,7 @@ Amazon Athena is an interactive query service that makes it easy to analyze data
 
 * Click **Run Query** and results are returned that look like the following:
 
- ![athena3.png](/images/athena3.png)
+ ![athena3.png](./images/athena3.png)
  
  
 ## Data analysis with Redshift and connect to AWS Glue
@@ -67,7 +67,7 @@ First setup VPC in which you want to create your cluster.
 
 * Click **Add Endpoint** below **Service endpoints** and select **com.amazonaws.us-east-1.s3** as service.
 
-![redshift1.png](/images/redshift1.jpg)
+![redshift1.png](./images/redshift1.jpg)
 
 * Click **Create VPC**.
 
@@ -81,7 +81,7 @@ First setup VPC in which you want to create your cluster.
 
 * Click **Save rules**, and **Close**.
 
-![redshift2.png](/images/redshift2.jpg)
+![redshift2.png](./images/redshift2.jpg)
 
 ### Setting up Redshift
 
@@ -99,7 +99,7 @@ First setup VPC in which you want to create your cluster.
 
 * Click **add all the subnets** then click **Create**.
 
-![redshift3.png](/images/redshift3.jpg)
+![redshift3.png](./images/redshift3.jpg)
 
 * In the navigation pane, choose **Clusters**.
 
@@ -125,7 +125,7 @@ First setup VPC in which you want to create your cluster.
 
 * It will need 10-15 minutes passed before the cluster was ready to use.
     
-![redshift4.png](/images/redshift4.jpg)
+![redshift4.png](./images/redshift4.jpg)
 
 ### Connect to AWS Glue
 
@@ -153,7 +153,7 @@ First setup VPC in which you want to create your cluster.
 
 * Select **AWSGlueServiceRoleDefault** as **IAM role**, and click **Test connection**. You will find below screen after testing.
 
-![redshift5.png](/images/redshift5.jpg)
+![redshift5.png](./images/redshift5.jpg)
 
 * On the **Services** menu, click **AWS Glue**.
 
@@ -167,7 +167,7 @@ First setup VPC in which you want to create your cluster.
 
 * Select **usvideos_csv**, and click **Next**.
 
-![redshift7.png](/images/redshift7.jpg)
+![redshift7.png](./images/redshift7.jpg)
 
 * Choose **Create tables in your data target**.
 
@@ -177,7 +177,7 @@ First setup VPC in which you want to create your cluster.
 
 * 	Click **Save job and edit script** you will find this screen below.
 
-![redshift8.png](/images/redshift8.jpg)
+![redshift8.png](./images/redshift8.jpg)
 
 * 	Click **Save job and edit script**.
 
@@ -185,7 +185,7 @@ First setup VPC in which you want to create your cluster.
 
     * In this job, AWS Glue send data to Redshift cluster and processing data by the cluster.
 
-![redshift9.png](/images/redshift9.jpg)
+![redshift9.png](./images/redshift9.jpg)
 
 ## Congratulations! You now have learned how to:
 

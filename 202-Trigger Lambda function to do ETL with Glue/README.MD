@@ -83,15 +83,15 @@ Now you finish the crawler setting, and going to create a job to transform data 
 
 * 	Verify the schema mapping, and choose **Next** and click **Save job and edit script**. Skip Script editor tips.
 
-![glue5.png](/images/glue5.png)
+![glue5.png](./images/glue5.png)
 
 * 	View the job. This screen provides a complete view of the job and allows you to edit, click **Save**, and choose **Run job**. This steps may be waiting around 10 minutes.
 
-![glue6.png](/images/glue6.png)
+![glue6.png](./images/glue6.png)
 
 * 	When job finished, go to your S3 bucket **“yourname-etl-result”** ensure there is a parquet file that means your job succeed.
 
-![glue7.png](/images/glue7.png)
+![glue7.png](./images/glue7.png)
 
 
 ### Add another parquet table and crawler for USvideos.csv
@@ -120,7 +120,7 @@ Now you finish the crawler setting, and going to create a job to transform data 
 
 * 	After the crawler has finished, there is a new table in the **my-data** database:
 
-![glue8.png](/images/glue8.png)
+![glue8.png](./images/glue8.png)
 
 * That means you finish the ETL process of csv to parquet format **(USvideos.csv)**.
 
@@ -155,15 +155,15 @@ In order to analyze the channel category, we need to perform another job in Glue
 
 * 	Verify the schema mapping, and choose **Next** and click **Save job and edit script**.
 
-![glue10.png](/images/glue10.png)
+![glue10.png](./images/glue10.png)
 
 * 	View the job. This screen provides a complete view of the job and allows you to edit, click **Save**, and choose **Run job**. This steps may be waiting around 10 minutes.
 
-![glue11.png](/images/glue11.png)
+![glue11.png](./images/glue11.png)
 
 * 	When job finished, go to your S3 bucket **“yourname-etl-result2”** ensure there is a parquet file that means your job succeed.
 
-![glue12.png](/images/glue12.png)  
+![glue12.png](./images/glue12.png)  
  
 Now you need to add another parquet table and crawler
 
@@ -191,7 +191,7 @@ Now you need to add another parquet table and crawler
 
 * 	After the crawler has finished, there is a new table in the **my-data** database:
 
-![glue13.png](/images/glue13.png)
+![glue13.png](./images/glue13.png)
 
 Next step you will learn how to trigger ETL job with Lambda function automatically
 
@@ -245,7 +245,7 @@ Next step you will learn how to trigger ETL job with Lambda function automatical
                Arguments = {})
            return response
  
-  ![lambda_glue4.png](/images/lambda_glue4.png) 
+  ![lambda_glue4.png](./images/lambda_glue4.png) 
 
 * Scroll to **Add triggers** at top of the page.
 
@@ -261,9 +261,9 @@ Next step you will learn how to trigger ETL job with Lambda function automatical
 
 * Click **Add**.
 
-![lambda_glue2.png](/images/lambda_glue2.png)
+![lambda_glue2.png](./images/lambda_glue2.png)
 
-![lambda_glue3.png](/images/lambda_glue3.png)
+![lambda_glue3.png](./images/lambda_glue3.png)
 
 * 	Click **Save** to save the change of function.
 
@@ -271,7 +271,7 @@ Next step you will learn how to trigger ETL job with Lambda function automatical
 
 * 	After you upload a csv file into **yourname-dataset** bucket, AWS Glue will run the job **“data-csv-parquet”**. The **History** console will show the job is running if your Lambda function is correct.
 
-![lambda_glue5.png](/images/lambda_glue5.png)
+![lambda_glue5.png](./images/lambda_glue5.png)
 
 
 

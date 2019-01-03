@@ -1,3 +1,9 @@
+# Analyze and visualize the data with Redshift and QuickSight
+
+You use Amazon Comprehend to examine and analyze a document to determine common themes.
+
+Next, we will use Redshift to do data analysis that often processing structural data query job for long term workflow. Then use Amazon BI tool - QuickSight, it is a business analytics service you can use to build visualizations, perform ad hoc analysis, and get business insights from your data. It can automatically discover AWS data sources and also works with your data sources.
+
 ## Data analysis with Redshift and connect to AWS Glue
 
 After finish analyzing data in Athena, get start with data analysis with Amazon Redshift. Different from Athena, it is recommended to use Amazon Redshift on large sets of structured data. It is scalable enough that even if new nodes are added to the cluster, it can be easily accommodated with few configuration changes.

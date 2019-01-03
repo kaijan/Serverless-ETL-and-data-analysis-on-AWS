@@ -186,4 +186,8 @@ Amazon Comprehend uses a pre-trained model to examine and analyze a document or 
 *  Setup an automated topic modeling job with Lambda function.
 
 
-### Now you are ready to [Analyze the data with Athena and Redshift](https://github.com/ecloudvalley/Serverless-ETL-and-data-analysis-on-AWS/tree/master/204-Analyze%20the%20data%20with%20Athena%20and%20Redshift)
+### Now you are ready to Analyze the data with Athena or Redshift
+
+* [Analyze data with Athena](https://github.com/ecloudvalley/Serverless-ETL-and-data-analysis-on-AWS/tree/master/Analyze%20and%20visualize%20the%20data%20with%20Athena%20and%20QuickSight)
+
+* [Analyze data with Redshift](https://github.com/ecloudvalley/Serverless-ETL-and-data-analysis-on-AWS/tree/master/Analyze%20and%20visualize%20the%20data%20with%20Redshift%20and%20QuickSight)

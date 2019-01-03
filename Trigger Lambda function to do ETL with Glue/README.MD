@@ -203,7 +203,7 @@ Next step you will learn how to trigger ETL job with Lambda function automatical
 
 *  Setup an automated ETL job with Lambda function.
 
-### Now you are ready to use [AWS Comprehend to do topic modeling job](https://github.com/ecloudvalley/Serverless-ETL-and-data-analysis-on-AWS/tree/master/203-Using%20AWS%20Comprehend%20do%20topic%20modeling%20job)
+### Now you are ready to use [AWS Comprehend to do topic modeling job](https://github.com/ecloudvalley/Serverless-ETL-and-data-analysis-on-AWS/tree/master/Using%20AWS%20Comprehend%20do%20topic%20modeling%20job)
 
 
 

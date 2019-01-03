@@ -40,6 +40,7 @@ As illustrated in the preceding diagram, this is a big data processing in this m
 * On the other hand, [AWS Comprehend doing topic modeling job as sentiment analysis with certain data.](https://github.com/ecloudvalley/Serverless-ETL-and-data-analysis-on-AWS/tree/master/203-Using%20AWS%20Comprehend%20do%20topic%20modeling%20job)
 
 3. Analysis and Visualize
+
 Here you can choose Athena or Redshift to perform query job know as data analysis when ETL job finished, both of them can be used for data analysis, choose one suitable for your application.
 
 * [Analyze and visualize the data with Athena and QuickSight](https://github.com/ecloudvalley/Serverless-ETL-and-data-analysis-on-AWS/tree/master/Analyze%20and%20visualize%20the%20data%20with%20Athena%20and%20QuickSight)

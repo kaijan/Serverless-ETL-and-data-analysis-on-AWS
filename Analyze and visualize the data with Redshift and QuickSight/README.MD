@@ -144,6 +144,142 @@ First setup VPC in which you want to create your cluster.
 
 ![redshift9.png](./images/redshift9.jpg)
 
+## Data visualization with QuickSight
+
+### Setting Up Amazon QuickSight
+
+* Go to AWS Services page by searching **Quicksight** by AWS Services search bar.
+
+    * Please confirm the user have Administrator permission to sign up QuickSight.
+
+* Provide your email address on **Welcome to QuickSight page**. Click **Continue** and **Next** until to finish **Get Started**.
+
+* Click **Sign up for QuickSight**.
+
+![qs1.png](./images/qs1.png)
+
+* Choose **Standard**, click **Continue**. 
+ 
+* Provide requested information and setting then click on **Finish**.
+
+    * Type in a your **email** address to receive Amazon QuickSight service and usage notifications.
+
+![qs3.png](./images/qs3.png)
+
+* It takes a while to enable your account.
+
+![qs4.png](./images/qs4.png)
+
+* Finish register you will find the screen below:
+
+![qs5.png](./images/qs5.png)
+
+![qs6.png](./images/qs6.png)
+
+![qs7.png](./images/qs7.png)
+
+* If you are new to QuickSight, the analyses board will be empty, now we can get start with **QuickSight**.
+
+### Create an Analysis with Redshift
+ 
+* 	Back to QuickSight home page and click **New analysis**.
+
+* 	Click **New data set** and select **Redshift (Manual connect)**.
+
+![qs26.png](./images/qs26.png)
+
+* 	Enter Data source name **RedshiftBI**
+
+* 	Enter **Database server** as your redshift cluster **Endpoint**.
+
+    * e.g., my-cluster.ceng4yniaba2.us-east-1.redshift.amazonaws.com
+
+![qs27.png](./images/qs27.png)
+
+* 	Enter Port **5439**.
+
+* 	Enter **Database name: mydb**.
+
+* 	Enter your **Username** and **Password** of redshift cluster that you create before.
+
+* 	Click **Validate connection**.
+
+* 	Click **Create data source**.
+
+![qs28.png](./images/qs28.png)
+
+* 	Select **usvideos_csv** as table and click **Select**.
+
+![qs29.png](./images/qs29.png)
+
+* 	Click **Visualize**.
+
+* 	Select a **Visual types** then drag the field items which below **Fields list** into **Field wells** and you can create different BI charts just like Athena data source.
+
+![qs30.png](./images/qs30.png)
+
+![qs31.png](./images/qs31.png)
+
+![qs32.png](./images/qs32.png)
+
+* Now we import the result of topic modeling data (**topic-terms.csv**) to integrate with QuickSight.
+
+* 	Back to **QuickSight** console.
+
+* 	Click **New analysis**.
+
+* 	Click **New data set**.
+
+* 	Click **Upload a file**.
+
+![qs33.png](./images/qs33.png)
+
+* 	Select **topic-terms.csv** and upload.
+
+* 	Click **Next**.
+
+![qs34.png](./images/qs34.png)
+
+* 	Click **Visualize**
+
+![qs35.png](./images/qs35.png)
+
+* 	Select a **Visual types** then drag the field items which below **Fields list** into **Field wells** and you can create different BI charts.
+
+* 	For example, **horizontal stacked bar chart** shows that sum of weight by term. We can know that the word **president** is often appears in US videos.
+
+![qs36.png](./images/qs36.png)
+
+* You can query certain trending topic of **title** to do several analytics. For example, video relate to **President**.
+
+* 	Back to your QuickSight data sets page click **New data set**.
+
+![qs37.png](./images/qs37.png)
+
+* 	Choose **Athena** and enter data source name **President**. 
+
+* 	Select **yourname_etl_result** in **my-data** database and click **Edit / Preview data**
+
+![qs38.png](./images/qs38.png)
+
+* 	In the navigation pane under **Tables**, select **Use SQL**.
+
+![qs39.png](./images/qs39.png)
+
+* 	Enter SQL name **President** and paste below code in Custom SQL field.
+
+         Select * From "my-data"."yourname_etl_result" where title like '%President%'; 
+
+    *  It means for the title that contain “President”
+
+![qs40.png](./images/qs40.png)
+
+*	Click Finish then Click on **Save & visualize**.
+
+* 	Then you can create several plots of **President title video**. For example, Pie Chart in this case.
+
+![qs41.png](./images/qs41.png)
+
 ## Congratulations! You now have learned how to:
 
 * Setting up Redshift.

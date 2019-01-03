@@ -166,3 +166,9 @@ Amazon Athena is an interactive query service that makes it easy to analyze data
 * 	Then you can start customize your chart to do your BI strategy. This plot shows the factors that impact Entertainment video type in this query case.
 
 ![qs25.png](./images/qs25.png)
+
+## Congratulations! You now have learned how to:
+
+* Visualize data on Quicksight with Athena. 
+
+* You now have finished whole Lab and have learned how to do **Serverless ETL with AWS Glue & BI process with QuickSight**.

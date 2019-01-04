@@ -171,4 +171,4 @@ Amazon Athena is an interactive query service that makes it easy to analyze data
 
 * Visualize data on Quicksight with Athena. 
 
-* You now have finished whole Lab and have learned how to do **Serverless ETL with AWS Glue & BI process with QuickSight**.
+* You now have finished whole Lab and have learned how to do **Serverless ETL with AWS Glue & BI process with QuickSight**. 

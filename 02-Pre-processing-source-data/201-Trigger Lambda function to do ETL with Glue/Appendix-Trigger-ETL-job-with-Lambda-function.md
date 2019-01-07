@@ -1,5 +1,6 @@
 ## Appendix-Trigger ETL job with Lambda function
 
+
 ### Create a Lambda function in order to automate ETL job with glue (automated ETL job)
 
 * 	On the **Services** menu, click **Lambda**.
@@ -64,7 +65,10 @@
 
 ![lambda_glue5.png](./images/lambda_glue5.png)
 
+## Clean Up
 
+
+## Congratulations! You now have learned how to:
 
 
 

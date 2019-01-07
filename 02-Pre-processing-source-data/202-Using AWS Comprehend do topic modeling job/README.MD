@@ -16,68 +16,68 @@ Amazon Comprehend uses a pre-trained model to examine and analyze a document or 
 
 ### To create a topic detection job
 
-* 	On the **Services** menu, click **Amazon Comprehend**.
+1. 	On the **Services** menu, click **Amazon Comprehend**.
 
-*   Click **Try Amazon Comprehend**.
+2.   Click **Try Amazon Comprehend**.
 
-*   Click **switch to the old console** on the top of console.
+3.   Click **switch to the old console** on the top of console.
 
-* 	In the navigation pane, click **Topic modeling**.
+4. 	In the navigation pane, click **Topic modeling**.
 
-* 	Click **Create**.
+5. 	Click **Create**.
 
-* 	Select **My data (S3)** as input data.
+6. 	Select **My data (S3)** as input data.
 
-* 	For **S3 data location** of input data, enter the URL of **“yourname-topic-analysis”** bucket **(e.g., s3://james-topic-analysis/)**.
+7. 	For **S3 data location** of input data, enter the URL of **“yourname-topic-analysis”** bucket **(e.g., s3://james-topic-analysis/)**.
 
-* 	For Input format, select **One document per line**.
+8. 	For Input format, select **One document per line**.
 
-* 	Enter **50** for **Numbers of topic**.
+9. 	Enter **50** for **Numbers of topic**.
 
-* 	For **Job Name**, enter **first_job**.
+10. For **Job Name**, enter **first_job**.
 
-* 	For **S3 data location** of output data, enter the URL of **“yourname-topic-analysis-result” (e.g., s3://james-topic-analysis-result/)**.
+11. For **S3 data location** of output data, enter the URL of **“yourname-topic-analysis-result” (e.g., s3://james-topic-analysis-result/)**.
 
-* 	Select **Create a new IAM role** in **Select an IAM role** blank.
+12. Select **Create a new IAM role** in **Select an IAM role** blank.
 
-* 	For **Permission to access** select **any S3 bucket**.
+13. For **Permission to access** select **any S3 bucket**.
 
-* 	For **Name suffix** enter **user**.
+14. For **Name suffix** enter **user**.
 
 ![setup_comprehend1.png](./images/setup_comprehend1.png)
 
-* 	Click **Create job** to create and start the topic detection job.
+15. Click **Create job** to create and start the topic detection job.
 
-* 	It will take a few time running.
+16. It will take a few time running.
 
 <p align="center">
     <img src="images/setup_comprehend2.png" width="40%" height="40%">
 </p>
 
-* 	Then you will see your job is running.
+17. Then you will see your job is running.
 
 ![setup_comprehend3.png](./images/setup_comprehend3.png)
 
-* 	When the job complete the status change to *Completed*. You can click reflesh icon if waiting a while.
+18. When the job complete the status change to *Completed*. You can click reflesh icon if waiting a while.
 
-* 	After job completed, you will find a new output in **yourname-topic-analysis-result** bucket in Amazon S3.
+19. After job completed, you will find a new output in **yourname-topic-analysis-result** bucket in Amazon S3.
 
-* 	Click below folder:
+20. Click below folder:
 
 ![setup_comprehend4.png](./images/setup_comprehend4.png)
 
-*   Click **output** you will see a file **output.tar.gz**.
+21. Click **output** you will see a file **output.tar.gz**.
 
 ![setup_comprehend5.png](./images/setup_comprehend5.png)
 
-*   Download the file you will get the topic modeling result as csv file.
-
-<p align="left">
-    <img src="images/setup_comprehend7.png" width="60%" height="60%">
-</p>
+22. Download the file, unzip it and you will get the topic modeling result as csv file.
 
 <p align="left">
     <img src="images/setup_comprehend6.png" width="80%" height="80%">
+</p>
+
+<p align="left">
+     <img src="images/setup_comprehend7.png" width="60%" height="60%">
 </p>
 
 
@@ -85,21 +85,21 @@ Amazon Comprehend uses a pre-trained model to examine and analyze a document or 
 
 ### Create a Lambda to trigger topic detection jobs by Amazon Comprehend
 
-* 	On the **Services** menu, click **Lambda**.
+1. 	On the **Services** menu, click **Lambda**.
 
-* 	Click **Create function**.
+2. 	Click **Create function**.
 
-* 	Choose **Author from scratch**.
+3. 	Choose **Author from scratch**.
 
-* 	Enter function Name: **comprehend-lambda**.
+4. 	Enter function Name: **comprehend-lambda**.
 
-* 	Select **python 3.6** in **Runtime** blank.
+5. 	Select **python 3.6** in **Runtime** blank.
 
-* 	Select **Choose an existing role** in **Role** blank and choose **Comprehend-Job** as **Existing role**.
+6. 	Select **Choose an existing role** in **Role** blank and choose **Comprehend-Job** as **Existing role**.
 
-* 	Click **Create function**.
+7. 	Click **Create function**.
 
-* 	Click **comprehend-lambda** blank in **Designer** and replace original code that existing in **Function code** editor with below code
+8. 	Click **comprehend-lambda** blank in **Designer** and replace original code that existing in **Function code** editor with below code
 
     *   Input_s3_url = “s3://yourname-topic-analysis”
     
@@ -131,45 +131,43 @@ Amazon Comprehend uses a pre-trained model to examine and analyze a document or 
                return start_topics_detection_job_result
  
 
-* 	In **configuration**, click **S3** below **Add triggers** to add trigger for **comprehend-lambda** function
+9. 	In **configuration**, click **S3** below **Add triggers** to add trigger for **comprehend-lambda** function
 
-* 	and drop down to **Configure triggers** part, select bucket **“yourname-topic-analysis”** as Bucket, select **All Object create events** as **Event type**. Remember to check Enable trigger box then you click **Add**.
+10. and drop down to **Configure triggers** part, select bucket **“yourname-topic-analysis”** as Bucket, select **All Object create events** as **Event type**. Remember to check Enable trigger box then you click **Add**.
 
 ![lambda_comprehend1.png](./images/lambda_comprehend1.png)
 
-* 	Click **Save** to save the change of function.
+11. Click **Save** to save the change of function.
 
-* 	Now you can re-upload a csv file into **“yourname-topic-analysis”** bucket to test that whether this Lambda function operating normally.
+12. Now you can re-upload a csv file into **“yourname-topic-analysis”** bucket to test that whether this Lambda function operating normally.
 
-* 	On the **Services** menu, click **S3**.
+13. On the **Services** menu, click **S3**.
 
-* 	Click **yourname-topic-analysis** bucket.
+14. Click **yourname-topic-analysis** bucket.
 
-* 	Click **Upload**.
+15. Click **Upload**.(Upload again)
 
-* 	Click **Add files**.
+16. Click **Add files**.
 
-*	Select file **word_analysis.csv** and click **Upload**.
+17.	Select file **word_analysis.csv** and click **Upload**.
 
-* 	When it upload finish go to your **Amazon comprehend** console.
+18. When it upload finish go to your **Amazon comprehend** console.
 
-* 	Click **Topic modeling**.
-
-* 	**You will find a new job is running**
+19. **You will find a new job is running**.
 
 ![lambda_comprehend2.png](./images/lambda_comprehend2.png)
 
-* 	Download the output of job in **yourname-topic-analysis-result** bucket after job completed which is a result from topic modeling.
+20. Download the output of job in **yourname-topic-analysis-result** bucket after job completed which is a result from topic modeling.
 
 ![lambda_comprehend3.png](./images/lambda_comprehend3.png)
 
-* Click **output** you will see a file **output.tar.gz**.
+21. Click **output** you will see a file **output.tar.gz**.
 
 ![lambda_comprehend4.png](./images/lambda_comprehend4.png)
 
 ![lambda_comprehend5.png](./images/lambda_comprehend5.png)
 
-* Download the file you will get the topic modeling result as csv file.
+22. Download the file you will get the topic modeling result as csv file.
 
 <p align="left">
     <img src="images/lambda_comprehend6.png" width="60%" height="60%">
@@ -178,6 +176,14 @@ Amazon Comprehend uses a pre-trained model to examine and analyze a document or 
 <p align="center">
     <img src="images/lambda_comprehend7.png" width="60%" height="60%">
 </p>
+
+## Clean Up
+
+* Go to **S3** and **delete** buckets you create.
+
+
+
+
 
 ## Congratulations! You now have learned how to:
 

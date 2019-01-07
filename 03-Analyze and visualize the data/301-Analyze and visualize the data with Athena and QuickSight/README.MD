@@ -149,7 +149,7 @@ Amazon Athena is an interactive query service that makes it easy to analyze data
 
 ![qs22.png](./images/qs22.png)
 
-18. On the top of the website, click on **Switch to custom SQL mode**.(如截圖)
+18. On the top of the website, click on **Switch to custom SQL mode**.
 
 <img src="images/qs-switchcustomsqlmode.png" width="100%" height="100%">
 

@@ -22,10 +22,16 @@ This use case using trending YouTube video data to analyze which video channel o
 
 ![preview_data2.png](/images/preview_data2.png)
 
+## Prerequisites
 
-## You will Learn
-![learnflow.png](/images/learnflow.png)
+* An AWS account
 
+* Make sure the region is **US East (N. Virginia)**, which its short name is **us-east-1**.
+
+* Download **this repository** and unzip, ensure that **data** folder including three files:
+    * **USvideos.csv**
+    * **US-category-id.json**
+    * **word_analysis.csv**
 
 ## Lab Architecture
 ![lab_architecture.png](/images/lab_architecture2.png)
@@ -47,17 +53,11 @@ As illustrated in the preceding diagram, this is a big data processing in this m
 
     * [Analyze and visualize the data with Redshift and QuickSight](https://github.com/ecloudvalley/Serverless-ETL-and-data-analysis-on-AWS/tree/master/Analyze%20and%20visualize%20the%20data%20with%20Redshift%20and%20QuickSight)
 
+## Clean Up
+(WIP)
 
-## Prerequisites
-
-* An AWS account
-
-* Make sure the region is **US East (N. Virginia)**, which its short name is **us-east-1**.
-
-* Download **this repository** and unzip, ensure that **data** folder including three files:
-    * **USvideos.csv**
-    * **US-category-id.json**
-    * **word_analysis.csv**
+## Conclusion
+(WIP)
 
 
 

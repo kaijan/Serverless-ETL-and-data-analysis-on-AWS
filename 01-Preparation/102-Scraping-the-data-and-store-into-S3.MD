@@ -14,10 +14,6 @@ In this tutorial, we will create IAM roles for multiple AWS services, whcih is a
 
    > Please download completely folder from Github, click **Clone or download** which is **green icon** on upper right corner, and choose **Download ZIP**.
 
-
-
-
-
 ## Create S3 bucket to store data
 
 This part will create five bucket, each bucket apply different data process stage.
@@ -27,6 +23,7 @@ This part will create five bucket, each bucket apply different data process stag
 * The third bucket stores the data that after **doing json ETL process**.<br>
 * The fourth bucket stores the data that **doing topic detection job**.<br>
 * The fifth bucket stores the data that **complete topic detection job**.<br>
+
 
 ### Create the 1st Bucket for Storing Data
 
@@ -46,6 +43,7 @@ This part will create five bucket, each bucket apply different data process stag
 
 8. Select file **USvideos.csv** and **US-category-id.json** then click **Upload**.
 
+
 ### Create the 2nd Bucket for csv output
 
 1. For another bucket, click **Create bucket** again and enter the bucket name **“yourname-etl-result” (e.g., james-etl-result)** and ensure that the bucket name is unique so that you can create.
@@ -57,6 +55,7 @@ This part will create five bucket, each bucket apply different data process stag
 1. For another bucket, click **Create bucket** again and enter the bucket name **“yourname-etl-result2” (e.g., james-etl-result2)** and ensure that the bucket name is unique so that you can create.
 
 2. Click **Create**.
+
 
 ### Create the 4th Bucket for topic detection input
 
@@ -71,6 +70,7 @@ This part will create five bucket, each bucket apply different data process stag
 5. Click **Add files**.
 
 6. Select file **word_analysis.csv** then click Upload.
+
 
 ### Create the 5th Bucket for topic detection output
 

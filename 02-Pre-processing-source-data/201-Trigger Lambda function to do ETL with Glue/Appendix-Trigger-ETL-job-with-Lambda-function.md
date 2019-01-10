@@ -65,10 +65,8 @@
 
 ![lambda_glue5.png](./images/lambda_glue5.png)
 
-## Clean Up
-
 
 ## Congratulations! You now have learned how to:
-
+* Automate ETL job with glue.
 
 

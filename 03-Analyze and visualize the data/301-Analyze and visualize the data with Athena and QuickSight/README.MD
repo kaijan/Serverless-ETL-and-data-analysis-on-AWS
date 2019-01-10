@@ -127,34 +127,36 @@ Amazon Athena is an interactive query service that makes it easy to analyze data
 
 10.	Create a **New data set** and choose **Athena** as data sources.
 
-11. Select database **my-data** and select the table **yourname_etl_result2**.
+11. Enter a name for the data source in **Data source name**, then click **Validate connection**. If it turns into **Validated**, then click **Create data source** ; if not, please change a name in order to Validate it successful.
+
+12. Select database **my-data** and select the table **yourname_etl_result2**.
 
 ![qs19.png](./images/qs19.png)
 
-12.	Click **Select** and **Visualize**.
+13.	Click **Select** and **Visualize**.
 
-13. Select table chart to display the title and id of category.
+14. Select table chart to display the title and id of category.
 
 ![qs20.png](./images/qs20.png)
 
-14. You can query certain **category id** to do several analytics.
+15. You can query certain **category id** to do several analytics.
 
-15. Back to your QuickSight data sets page click **New data set**.
+16. Back to your QuickSight data sets page click **New data set**.
 
 ![qs21.png](./images/qs21.png)
 
-16. Choose **Athena** and enter data source name **Entertainment**. 
+17. Choose **Athena** and enter data source name **Entertainment**. 
 
-17. Select **yourname_etl_result** in **my-data** database and click **Edit / Preview data**
+18. Select **yourname_etl_result** in **my-data** database and click **Edit / Preview data**.
 
 ![qs22.png](./images/qs22.png)
 
-18. On the top of the website, click on **Switch to custom SQL mode**.
+19. On the top of the website, click on **Switch to custom SQL mode**.
 
 <img src="images/qs-switchcustomsqlmode.png" width="100%" height="100%">
 
 
-19. Enter SQL name **Entertainment** and paste below code in Custom SQL field.
+20. Enter SQL name **Entertainment** and paste below code in Custom SQL field.
 
          Select * From "my-data"."yourname_etl_result" where category_id = 24;
 
@@ -162,14 +164,14 @@ Amazon Athena is an interactive query service that makes it easy to analyze data
 
 ![qs24.png](./images/qs24.png)
 
-20. Click **Finish** then Click on **Save & visualize**.
+21. Click **Finish** then Click on **Save & visualize**.
 
-21. Then you can start customize your chart to do your BI strategy. This plot shows the factors that impact Entertainment video type in this query case.
+22. Then you can start customize your chart to do your BI strategy. This plot shows the factors that impact Entertainment video type in this query case.
 
 ![qs25.png](./images/qs25.png)
 
 ## Congratulations! You now have learned how to:
 
-* Visualize data on Quicksight with Athena. 
+* Visualize data on **Quicksight** with Athena. 
 
 * You now have finished whole Lab and have learned how to do **Serverless ETL with AWS Glue & BI process with QuickSight**. 

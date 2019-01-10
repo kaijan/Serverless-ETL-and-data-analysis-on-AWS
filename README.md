@@ -52,12 +52,3 @@ As illustrated in the preceding diagram, this is a big data processing in this m
     * [Analyze and visualize the data with Athena and QuickSight](https://github.com/ecloudvalley/Serverless-ETL-and-data-analysis-on-AWS/tree/master/Analyze%20and%20visualize%20the%20data%20with%20Athena%20and%20QuickSight)
 
     * [Analyze and visualize the data with Redshift and QuickSight](https://github.com/ecloudvalley/Serverless-ETL-and-data-analysis-on-AWS/tree/master/Analyze%20and%20visualize%20the%20data%20with%20Redshift%20and%20QuickSight)
-
-## Clean Up
-(WIP)
-
-## Conclusion
-(WIP)
-
-
-

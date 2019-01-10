@@ -54,7 +54,7 @@ First setup VPC in which you want to create your cluster.
 
 6. Select the **VPC ID** (vpc-xxxxxxxx) same as **Redshift-VPC** that you create before.
 
-7. Click **add all the subnets** then click **Create**.
+7. Click **add all the subnets** then click **Create**. (The subnet ID must be same as the previous one.)
 
 ![redshift3.png](./images/redshift3.jpg)
 
@@ -106,7 +106,7 @@ First setup VPC in which you want to create your cluster.
 
 10. Click **Finish**.
 
-11. Select **redshift-spectrum**, and click **Test connection**.
+11. Select **redshift-connection** you created, and click **Test connection**.
 
 12. Select **AWSGlueServiceRoleDefault** as **IAM role**, and click **Test connection**. You will find below screen after testing.
 

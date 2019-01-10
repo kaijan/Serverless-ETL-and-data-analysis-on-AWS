@@ -106,22 +106,22 @@ You successfully create the role that allow AWS Glue get access to S3.<br><br>
 8. On the Permissions tab, choose the link **add inline policy** to create an inline policy.
 
 9. On the JSON tab, paste in the following policy:
-
-      {
-         "Version": "2012-10-17",
-         "Statement": [
-             {
-                 "Sid": "VisualEditor0",
-                 "Effect": "Allow",
-                 "Action": [
-                     "athena:*",
-                     "glue:*"
-                 ],
-                 "Resource": "*"
-             }
-         ]
-       }
-
+```
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Action": [
+                "athena:*",
+                "glue:*"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
+```
 10. Click **Review policy**.
 
 11. On the Review policy, enter policy name: **ETL-Analysis**
